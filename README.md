@@ -36,34 +36,28 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 
 ## Schedule
 
-**Course Dates:** Monday, May 31 – Friday, July 16, 2021 (7 weeks)
+**Course Dates:** Tuesday, August 24 – Thursday, October 7, 2021
 
-**Class Times:** Monday, Wednesday, Friday at 2:15 PM – 4 PM (19 class sessions)
+**Class Times:** Tuesday, Thursday at 4:00 PM – 5:30 PM
 
-| Class |    Date    |             Topics           | Assignment |
-|:-----:|:----------:|:----------------------------:|:----------:|
-|  - |  Mon, May 31  | **No Class - Memorial Day**  | - |
-|  1 |  Wed, June 2  | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
-|  2 |  Fri, June 4  | [Lesson 2 Typography]        | - |
-|  3 |  Mon, June 7  | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
-|  4 |  Wed, June 9  | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
-|  5 |  Fri, June 11 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
-|  6 |  Mon, June 14 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
-|  7 |  Wed, June 16 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
-|  8 |  Fri, June 18 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
-|  9 |  Mon, June 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
-| 10 |  Wed, June 23 | [Lesson 10 Animation] | Animation |
-| 11 |  Fri, June 25 | [Lesson 11 Before and after] | - |
-| 12 |  Mon, June 28 | [Lesson 12] | - |
-| 13 |  Wed, June 30 | [Lesson 13] | - |
-| 14 |  Fri, July 2  | [Lesson 14] | - |
-| -  |  Mon, July 5  | **No Class - Independence Day Observed** | - |
-| 15 |  Wed, July 7  | [Lesson 15] | Web Components 1 |
-| 16 |  Fri, July 9  | [Lesson 16] | Web Components 2 |
-| 17 |  Mon, July 12 | [Lesson 17] | - |
-| 18 |  Wed, July 14 | Present your work | - |
-| 19 |  Fri, July 16 | Final Assessment | - |
+| Class |    Date   |             Topics           | Assignment |
+|:-----:|:---------:|:----------------------------:|:----------:|
+|  1 |  Tue, Aug 24 | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
+|  2 |  Thu, Aug 26 | [Lesson 2 Typography]        | - |
+|  3 |  Tue, Aug 31 | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
+|  4 |  Thu, Sep  2 | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
+|  5 |  Tue, Sep  7 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
+|  6 |  Thu, Sep  9 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
+|  7 |  Tue, Sep 14 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
+|  8 |  Thu, Sep 16 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
+|  9 |  Tue, Sep 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
+| 10 |  Thu, Sep 23 | [Lesson 10 Animation] | Animation |
+| 11 |  Tue, Sep 28 | [Lesson 11 Before and after] | - |
+| 12 |  Thu, Sep 30 | Web Components 1 | - |
+| 13 |  Tue, Oct  5 | Present your work | - |
+| 14 |  Thu, Oct  7 | Final Assessment | - |
 
+<!-- Lessons -->
 [Lesson 1 CSS Review]: lessons/lesson-01.md
 [Lesson 2 Typography]: lessons/lesson-02.md
 [Lesson 3 Box Model Flex]: lessons/lesson-03.md
@@ -85,6 +79,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 18]: lessons/lesson-18.md
 [Lesson 19]: lessons/lesson-19.md
 
+<!-- Assignments -->
 [CSS Diner CSS ZenGarden Type]: lessons/lesson-01.md#after-class
 [CSS Zen Garden Card and Button]: lessons/lesson-03.md#after-class
 [CSS Zen Garden Background Images]: lessons/lesson-04.md#after-class
@@ -103,7 +98,7 @@ To pass this course you must meet the following requirements:
 - Actively participate in class and abide by the attendance policy
 - Make up all classwork from all absences
 
-##  Information Resources
+<!-- ##  Information Resources
 
 Any additional resources you may need (online books, etc.) can be found here. You can also find additional resources through the library linked below:
 
@@ -118,4 +113,4 @@ Any additional resources you may need (online books, etc.) can be found here. Yo
 - [Attendance Policy](https://make.sc/attendance-policy) - What we expect from you in terms of attendance for all classes at Make School
 - [Course Credit Policy](https://make.sc/course-credit-policy) - Our policy for how you obtain credit for your courses
 - [Disability Services (Academic Accommodations)](https://make.sc/disability-services) - Services and accommodations we provide for students
-- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students
+- [Student Handbook](https://make.sc/student-handbook) - Guidelines, policies, and resources for all Make School students -->
