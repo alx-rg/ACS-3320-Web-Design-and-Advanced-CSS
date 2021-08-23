@@ -38,7 +38,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 
 **Course Dates:** Tuesday, August 24 – Thursday, October 7, 2021
 
-**Class Times:** Tuesday, Thursday at 4:00 PM – 5:30 PM
+**Class Times:** Tuesday, Thursday at 4:00 PM PST – 5:30 PM PST
 
 | Class |    Date   |             Topics           | Assignment |
 |:-----:|:---------:|:-----------------------------|:-----------|
