@@ -12,7 +12,7 @@ CSS is a language that is responsible for the appearance of you web apps. To mak
 
 ## Prerequisites:  
 
-- [FEW 1.1](https://github.com/Make-School-Courses/FEW-1.1-Web-Foundations)
+- [ACS 1700 Web Foundations](https://github.com/Tech-at-DU/ACS-1700-WEB-Web-Foundations)
 
 ## Course Specifics
 
