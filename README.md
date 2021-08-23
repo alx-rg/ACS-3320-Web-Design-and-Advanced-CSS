@@ -41,7 +41,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 **Class Times:** Tuesday, Thursday at 4:00 PM – 5:30 PM
 
 | Class |    Date   |             Topics           | Assignment |
-|:-----:|:---------:|:----------------------------:|:----------:|
+|:-----:|:---------:|:-----------------------------|:-----------|
 |  1 |  Tue, Aug 24 | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
 |  2 |  Thu, Aug 26 | [Lesson 2 Typography]        | - |
 |  3 |  Tue, Aug 31 | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
