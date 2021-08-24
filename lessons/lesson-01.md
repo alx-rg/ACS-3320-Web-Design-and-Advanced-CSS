@@ -376,6 +376,15 @@ Dense blocks of type are hard to read. Adding space between lines makes them eas
 	- [CSS Zen Garden HTML Source](http://www.csszengarden.com/examples/index)
 	- Follow Lesson 01 1-3 in this video playlist: https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
+Assess your work
+
+| Expectations | Does not meet              | Meets                 | Exceeds                          |
+|:-------------|:---------------------------|:----------------------|:---------------------------------|
+| Completion   | Your Zen Garden Page only some of these styles: font-family, font-size, font-weight, color, line-height | Your Zen Garden page styles all of these properties: font-family, font-size, font-weight, color, line-height | You have carefully consoidered your styles, gotten feedback and acted on that feedback improving your work through iteration |
+| Quality      | Your typography does not help convey the message of the page content. | Your typography creates a hierarchy that helps convey the message of the page. | Your styles leads us visually through the content of the page enhacning the message. |
+| Comprehension| You're not sure what the style properties you use are doing and would have a hard time making changes. | You can expalain the styles you used to someone else. | You feel you could apply the concepts here to future projects. |
+| CSS Selectors | You modified the Zon Garden Markup | You were able to apply define selectors that can modify any element on the Zen Garden Page. | You can think mulitple selectors that could be used to select any element of the Zen Garden Page. |
+
 ## Resources
 
 - [CSS Diner](https://flukeout.github.io)
