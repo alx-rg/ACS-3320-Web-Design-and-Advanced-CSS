@@ -38,6 +38,24 @@ https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
 Follow the videos for Lesson 2
 
+## Explore type
+
+Take a look at some pages that have good typography and explore the values they used. 
+
+Take a look at these sites: 
+
+- https://reactjs.org
+- https://www.apple.com
+- https://www.android.com
+- https://www.nike.com
+
+Find some type you like and look at the properties used: 
+
+- What is the Font family?
+- What is the font size?
+- What is the weight? 
+- What is the line height?
+
 ## Fonts
 
 Fonts come in a wide variety. Fonts give form and visual style to the ideas and message. 
