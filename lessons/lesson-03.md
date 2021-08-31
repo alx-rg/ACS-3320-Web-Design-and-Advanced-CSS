@@ -10,7 +10,7 @@
 Read the CSS below:
 
 ```CSS
-body {
+html {
 	font-size: 14px;
 }
 
@@ -30,7 +30,7 @@ body > div > p {
 - How big is the h1 in px?
 - How big is the p in px?
 
-## Learning Objectives 
+## Learning Objectives
 
 - Use the box model
 - Calculate the size of a box 
