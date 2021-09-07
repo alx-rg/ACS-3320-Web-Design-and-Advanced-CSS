@@ -16,7 +16,7 @@ Style the button using the markup above. You should only be adding CSS styles!
 
 The arrow image on the right side of the button should be added with the CSS background image property. Use the image below: 
 
-<div style="background-color: cornflowerblue; margin: 1rem">
+<div style="background-color: black; margin: 1rem">
 	<img src="images/circle-arrow.png">
 </div>
 
