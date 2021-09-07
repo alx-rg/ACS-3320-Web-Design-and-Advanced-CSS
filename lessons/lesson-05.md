@@ -16,7 +16,7 @@ With the HTML above write the CSS that will add `arrow.png` to the right of the 
 <h1>Company name</h1>
 ```
 
-USing the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
+Using the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
 
 ## Learning Objectives 
 
