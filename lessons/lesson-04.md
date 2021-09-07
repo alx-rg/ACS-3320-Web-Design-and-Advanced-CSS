@@ -4,6 +4,8 @@
 
 Try these problems to assess your skills: 
 
+**Problem 1:**
+
 ```HTML
 <ul>
 	<li>Apples</li>
@@ -14,6 +16,9 @@ Try these problems to assess your skills:
 
 - Use flex to arrange the elements in the list above in a row. 
 - Align them in the center on the cross axis. 
+- Bonus: remove the bullet
+
+**Problem 2:**
 
 ```HTML
 <div>
@@ -25,6 +30,8 @@ Try these problems to assess your skills:
 
 - Use flex to arrange the a tags above in a column
 - Align them to the right on the cross axis
+
+**Problem 3:**
 
 ```HTML
 <div>

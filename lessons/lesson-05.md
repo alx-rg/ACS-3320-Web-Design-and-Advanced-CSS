@@ -2,21 +2,26 @@
 
 ## Review 
 
-Quick answer these questions: 
+Imagine this is an interview question. 
 
-Give me a transparent orange color. Write the CSS value that make a transparent orange. 
+Using the markup below create the button in the picture.
 
 ```HTML
 <button class="next-button">Next</button>
 ```
 
-With the HTML above write the CSS that will add `arrow.png` to the right of the button text. The image should be same size as the text. 
+![button](images/button.png)
 
-```HTML
-<h1>Company name</h1>
-```
+Style the button using the markup above. You should only be adding CSS styles! 
 
-USing the markup above add an the image `pattern.png` along the bottom edge. The image should be 10px and repeat on the x axis. 
+The arrow image on the right side of the button should be added with the CSS background image property. Use the image below: 
+
+<div style="background-color: cornflowerblue; margin: 1rem">
+![button](images/circle-arrow.png)
+</div>
+
+
+
 
 ## Learning Objectives 
 
