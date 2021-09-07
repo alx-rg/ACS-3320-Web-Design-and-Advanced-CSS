@@ -20,9 +20,6 @@ The arrow image on the right side of the button should be added with the CSS bac
 ![button](images/circle-arrow.png)
 </div>
 
-
-
-
 ## Learning Objectives 
 
 - Use CSS Grid
