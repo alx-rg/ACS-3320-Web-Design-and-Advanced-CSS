@@ -114,15 +114,18 @@ Study the frameworks above. Look at what they offer. You will make your framewor
 
 ## After Class
 
-There are two assignment for this week. 
+Think of this asssignment as a junior level take home interview question. 
 
-Assignment 1 - Create a version of the CSS Zen Garden page using a CSS Framework. You can choose your favorite framework, it's up to you. With this assignment you are allowed to make any changes you like to zen garden HTML markup. 
+The goal is to style the Zen Garden markup using a CSS Framework. You can choose any of the frameworks above or use another. You must complete the work by the next class session and submit your solution to Gradescope. 
 
-Study the way the framework operates. Ask yourself these questions:
+You should style as much of the page as you can to the best of your ability using the framework you choose. For this assignment you are allowed to modify the Zen Garden markup. 
 
-- What tags does it style? No need for a class name? 
-- What markup is required? Sometimes to get something to work you need to combine certain tags and may have to include a class name. 
-- How are class names used? 
+Be sure to incorporate the following elements into your work: 
+
+- Use Headings
+- Use a card style 
+- Use a button style
+- Use Navbar style
 
 ## Additional Resources
 
