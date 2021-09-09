@@ -6,24 +6,59 @@ Follow this lesson lecture in video form:
 
 https://youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
-Watch Lesson 06 1 - 3
+Watch Lesson 06 1-3
 
 ## Review
 
+Imagine you need to design a dashboard page for a new product. This page is divided into a grid. Below is an image showing what the final page might look like. 
+
+Grid Challenge: 
+
+![grid challenge](images/grid-challenge.png)
+
+Your goal is to recreate the image above with the markup below. Imagine this as a coding interview. 
+
+Follow these steps: 
+
+- Think about the problem and formulate at least one question for the interviewer. Your question should help clarify the problem and focus the expectation. 
+- Outline your solution with comments. Think of this as Pseudo coding your solution! Review your pseudo code with the interviewer before coding! 
+- Code your solution. 
+
 ```HTML
-<div class="container">
-	<div class="a">
-	<div class="b">
-	<div class="c">
-	<div class="d">
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1 class="title">Dashboard</h1>
+    <div class="monster grid-cell">Monster</div>
+    <div class="welcome grid-cell">
+      <h2>Welcome</h2>
+      <p>Some text... </p>
+    </div>
+    <div class="parents grid-cell">
+      <h2>Parents</h2>
+      <p>Some text... </p>
+    </div>
+    <div class="customize grid-cell">
+      <h2>Customize</h2>
+    </div>
+    <div class="level-up grid-cell">
+      <h2>Level Up</h2>
+    </div>
+    <div class="play grid-cell">
+      <h2>Play</h2>
+    </div>
+  </div>
+  
+</body>
+</html>
 ```
-
-- Using the markup above arrange child divs in two columns of equal size
-
-- Using the markup above arrange the child divs in four columns where the first column is 100px, the second is 50px, the third is 4rems, and the last takes up the rest of the available space
-
-- Use grid-template-areas to define 4 grid cells. Map the divs .a, .b, .c, and .d each to a different cell.
 
 ## Why you should know this?
 
