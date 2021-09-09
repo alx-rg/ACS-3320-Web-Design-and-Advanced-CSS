@@ -361,7 +361,7 @@ Now you can change the colors of all buttons and other elements that use the `--
 
 ## After Class
 
-Continue working on your CSS Framework. Use the ideas from this lesson to add some button styles! 
+Start working on your CSS Framework. Use the ideas from this lesson to add some button styles! 
 
 Work on your CSS Framework. be sure to use as many ideas from the class discussion above as you can! 
 

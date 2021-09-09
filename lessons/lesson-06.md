@@ -10,6 +10,8 @@ Watch Lesson 06 1-3
 
 ## Review
 
+Consider this exercise as a practice interview question. There are two parts: an on site question and a take home question. The take home question is at the bottom of this page [here](#after-class). 
+
 Imagine you need to design a dashboard page for a new product. This page is divided into a grid. Below is an image showing what the final page might look like. 
 
 Grid Challenge: 
@@ -58,7 +60,7 @@ Follow these steps:
   
 </body>
 </html>
-```
+``` 
 
 ## Why you should know this?
 
@@ -112,7 +114,7 @@ Study the frameworks above. Look at what they offer. You will make your framewor
 
 ## After Class
 
-There is two assignment for this week. 
+There are two assignment for this week. 
 
 Assignment 1 - Create a version of the CSS Zen Garden page using a CSS Framework. You can choose your favorite framework, it's up to you. With this assignment you are allowed to make any changes you like to zen garden HTML markup. 
 
@@ -121,36 +123,6 @@ Study the way the framework operates. Ask yourself these questions:
 - What tags does it style? No need for a class name? 
 - What markup is required? Sometimes to get something to work you need to combine certain tags and may have to include a class name. 
 - How are class names used? 
-
-Assignment 2 - 
-
-Your goal is to create your CSS Framework. This will be a stylesheet that has all of the base styles that you might use in any project. 
-
-You can emulate the features in the frameworks above. Look at the ideas these contain, implement them in your framework with your ideas. 
-
-Get started by downloading the starter code:
-
-https://github.com/Make-School-Labs/css-framework-starter). 
-
-Copy this repo above. It contains a single HTML file. You will add a stylesheet that styles the contents of this file. 
-
-The HTML file contains a range of typical elements that you will see on any website. The stylesheet you create should style these things so they look better than the default styles! 
-
-What's in the markup? 
-
-- Type - This inlcudes: 
-	- Headings
-	- paragraphs
-	- links
-- Buttons
-- Forms - This inlcudes: 
-	- Forms
-	- Inputs
-	- Check Boxes
-- Colors - Color swatches showing the colors used by your framework
-- Nav Bar
-
-Your job is to create a default stylesheet that you could add to any project that will make it look better than the default HTML styles.
 
 ## Additional Resources
 
