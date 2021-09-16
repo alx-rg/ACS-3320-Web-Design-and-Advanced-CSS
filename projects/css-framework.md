@@ -52,7 +52,7 @@ Anyone who wants to use your CSS framework should only have to download the .css
 
 Start by styling type. Set a default font style for your framework. Follow these steps: 
 
-- [ ] Named your CSS framework
+- [x] Named your CSS framework
 - [ ] Made a Repo
   - [ ] Copied Sample files into Repo
 - [ ] Choose a font 
