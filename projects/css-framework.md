@@ -1,4 +1,4 @@
-# FEW 2.2 - Assignment 4 - CSS Framework
+# CSS Framework
 
 This is the first part of a larger assignment to create a CSS framework. 
 
@@ -79,15 +79,12 @@ Start by styling type. Set a default font style for your framework. Follow these
   - [ ] abbr
   - [ ] code (this might use a different font - probably a fixed width font)
 
+
 You may not specifically define styles for everyone of the elements above, but you should consider the styles for each of these. 
 
 ### Deliverable
 
-A link to the branch of your project with the improved typography. 
 
-### Due date
-
-- Monday June 28 
 
 ## Assessing the assignment
 

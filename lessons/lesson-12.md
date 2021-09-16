@@ -47,7 +47,7 @@ Follow: lesson 12 for the SASS discussion.
 
 ## SASS Intro
 
-You can use desktop and commandline apps to process your SASS code: 
+You can use desktop and commandline apps to process your SASS code:
 
 [Koala](http://koala-app.com) is a free desktop app for processing SASS. 
 
