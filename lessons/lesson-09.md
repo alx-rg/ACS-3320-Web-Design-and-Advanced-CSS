@@ -237,8 +237,14 @@ https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
 
 With only the label element to work there is a limit to what you can draw. Luckily CSS provides to special elements: 
 
-- `:before` (adds a first child element)
-- `:after` (add a last child element)
+- `::before` (adds a first child element)
+- `::after` (add a last child element)
+
+The `::before` and `::after` pseudo elements generate a DOM elements that are added before and after the content of the target element! 
+
+We can also use the `:checked` pseudo selector to apply styles 
+when an element is checked. This applies to radio buttons and checkboxes. 
+
 - `:checked` (is active when the element is selected)
 
 These can be used to add elements that don't exist in your source markup. You can use them with the check box to add the checkmark. 
@@ -251,12 +257,29 @@ The `:checked` pseudo-class applies when a check box or a radio button is curren
 
 ## After Class
 
-Wrap up your CSS Framework styles by styling the form elements. Submit your completed framework to GradeScope. 
+Keep working on your CSS framework. You should have all of the base styles covered. To make your CSS framework useful it also needs to style form elements. Form elements have some of the worst styles by default. Your framework needs to provide a solid set of styles for all of the standard form elements out of the box with little effort from your users. 
 
 - Add styles for input elements to your framework. See [Challenges: Input](#challenge-inputs)
 - Add form layout styles. See [Challenges: Forms](#challenge-forms)
-- Add add radio and checbox styles. [See notes above](#Check-boxes-and-radio-buttons)
+- Add add radio and checkbox styles. [See notes above](#Check-boxes-and-radio-buttons)
+
+Here is a checklist of what I'm expecting to see: 
+
+- [ ] Styled inputs type: text, number, email, password. 
+  - [ ] Font is a good size (form elements are only 0.75em by default this usually too small!)
+  - [ ] Has a border or other style that clues us in that you can enter a value. 
+  - [ ] Has some padding. Usually the border crowds the text of these elements making them awkward to work with and harder to read. 
+  - [ ] Has a focus style. We need to know which field we are entering text into. Think about the default outline and consider if you need to replace this. [See my notes above](#styling-inputs)
+- [ ] Style Radio button and check boxes
+  - [ ] make a custom style for these. [See my notes](#checkboxes-and-radio-buttons) and the [resources](#additional-resources)
+  - [ ] Think about adding a transition
+  - [ ] Is this selected state clear? Can I tell which radio button is selected or whether a checkbox is selected? 
+- [ ] The form element will contain form elements. Consider giving this a style with `display: flex` and `flex-direction: column`. You might also create a class name that arranges the form elements. 
+- [ ] Stretch challenge: Style input type file. This should look like a button and hide the input element with the label displayed as a button! 
 
 ## Additional Resources
 
 1. https://css-tricks.com/the-checkbox-hack/
+1. https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+1. https://www.sliderrevolution.com/resources/styling-radio-buttons/
+
