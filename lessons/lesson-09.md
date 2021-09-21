@@ -276,6 +276,7 @@ Here is a checklist of what I'm expecting to see:
   - [ ] Is this selected state clear? Can I tell which radio button is selected or whether a checkbox is selected? 
 - [ ] The form element will contain form elements. Consider giving this a style with `display: flex` and `flex-direction: column`. You might also create a class name that arranges the form elements. 
 - [ ] Stretch challenge: Style input type file. This should look like a button and hide the input element with the label displayed as a button! 
+- [ ] Stretch Challenge: Make a "close box". The type of button that sits in the upper right corner with x. Use before and after to add the X to a normal button. 
 
 ## Additional Resources
 
@@ -283,3 +284,234 @@ Here is a checklist of what I'm expecting to see:
 1. https://moderncss.dev/pure-css-custom-styled-radio-buttons/
 1. https://www.sliderrevolution.com/resources/styling-radio-buttons/
 
+Here are some ideas for styling custom radion buttons and checkboxes:
+
+```HTML
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form Elements</title>
+
+		<style>
+			.box {
+				width: 100px;
+				height: 100px;
+				border: solid 1px;
+				position: relative;
+				background-color: #fff;
+			}
+
+			.box::before {
+				content: "";
+				width: 80px;
+				height: 10px;
+				background-color: #000;
+				transform: translate(10px, 45px) rotate(45deg);
+				position: absolute;
+				transition: 400ms;
+			}
+
+			.box::after {
+				content: "";
+				width: 80px;
+				height: 10px;
+				background-color: #000;
+				transform: translate(10px, 45px) rotate(-45deg);
+				position: absolute;
+				transition: 400ms;
+			}
+
+			.box:hover::before {
+				transform: translate(10px, 55px) rotate(0deg);
+				position: absolute;
+			}
+
+			.box:hover::after {
+				transform: translate(10px, 35px) rotate(0deg);
+				position: absolute;
+			}
+
+
+
+
+
+			/* Close button */
+			button.close-button {
+				width: 40px;
+				height: 40px;
+				border-width: 1px;
+				border-color: #000;
+				border-radius: 5px;
+				background-color: #fff;
+				display: inline-block;
+				position: relative;
+			}
+
+			button.close-button::after {
+				content: "";
+				width: 30px;
+				height: 6px;
+				background-color: #000;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translate(4px, 12px) rotate(0);
+				transition: 150ms;
+			}
+
+			button.close-button::before {
+				content: "";
+				width: 30px;
+				height: 6px;
+				background-color: #000;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translate(4px, 22px) rotate(0);
+				transition: 150ms;
+			}
+
+			button.close-button:hover::after {
+				transform: translate(4px, 17px) rotate(45deg);
+			}
+
+			button.close-button:hover::before {
+				transform: translate(4px, 17px) rotate(-45deg);
+			}
+
+			button.close-button:active {
+				background-color: #000;
+			}
+
+			button.close-button:active::after {
+				background-color: #fff;
+			}
+
+			button.close-button:active::before {
+				background-color: #fff;
+			}
+
+
+			/* Switch */
+
+			input[type=checkbox] {
+				display: none;
+			}
+
+			input[type=checkbox] + label.switch {
+				width: 50px;
+				height: 30px;
+				display: inline-block;
+				background-color: #ddd;
+				border-radius: 30px;
+				position: relative;
+				transition: 200ms;
+			}
+
+			input[type=checkbox] + label.switch::before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 26px;
+				height: 26px;
+				border-radius: 50%;
+				background-color: #fff;
+				left: 2px;
+				top: 2px;
+				transition: 200ms;
+			}
+
+			input[type=checkbox]:checked + label.switch::before {
+				left: 22px;
+			}
+
+			input[type=checkbox]:checked + label.switch {
+				background-color: rgb(14, 188, 14);
+			}
+
+
+
+			/* Radio */
+
+			input[type=radio] {
+				display: none;
+			}
+
+			input[type=radio] + label.radio {
+				position: relative;
+				padding-left: 28px;
+				height: 24px;
+				display: flex;
+				align-items: center;
+				margin: 0.25rem 0 0.25rem 0;
+			}
+
+			input[type=radio] + label.radio::before {
+				content: "";
+				width: 22px;
+				height: 22px;
+				border: 2px solid;
+				display: inline-block;
+				border-radius: 50%;
+				position: absolute;
+				left: 0;
+				transition: 200ms;
+			}
+
+			input[type=radio] + label.radio::after {
+				content: "";
+				width: 18px;
+				height: 18px;
+				background-color: transparent;
+				border-radius: 50%;
+				position: absolute;
+				left: 4px;
+				transition: 200ms;
+			}
+
+			input[type=radio]:checked + label.radio::before {
+				border-color: tomato;
+			}
+
+			input[type=radio]:checked + label.radio::after {
+				background-color: tomato;
+			}
+
+			.choice-container {
+				display: flex;
+				flex-direction: column;
+			}
+
+
+		</style>
+
+	</head>
+	<body>
+
+		<div class="box"></div>
+
+		<!-- 40px 40px -->
+		<button class="close-button"></button>
+
+		<button>Hello</button>
+
+
+		<input type="checkbox" id="checky">
+		<label class="switch" for="checky"></label>
+		
+		<div class="choice-container">
+
+			<input type="radio" id="vans" name="choice">
+			<label class="radio" for="vans">Vans</label>
+
+			<input type="radio" id="converse" name="choice">
+			<label class="radio" for="converse">Converse</label>
+
+			<input type="radio" id="nike" name="choice">
+			<label class="radio" for="nike">Nike</label>
+
+		</div>
+
+	</body>
+</html>
+```
