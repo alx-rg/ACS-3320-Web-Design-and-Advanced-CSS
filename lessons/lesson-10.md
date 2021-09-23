@@ -67,12 +67,12 @@ In a nutshell `transition` causes changes to CSS properties to change over time 
 
 ```CSS
 .a {
-	width: 100px;
-	height: 100px;
-	background-color: #f00;
-	/* Sets the time to apply changes to this element */
-	transition: 400ms;
-	/* s = secs ms = milliseconds */
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  /* Sets the time to apply changes to this element */
+  transition: 400ms;
+  /* s = secs ms = milliseconds */
 }
 
 .a:hover {
