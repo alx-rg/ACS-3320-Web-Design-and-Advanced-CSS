@@ -152,7 +152,7 @@ Pair up with someone you haven't paired with in-class before and take a look at 
 
 See the [example](lesson-02-example.html)
 
-## After Clss
+## After Class
 
 Follow these video tutorials. These videos walk through how to solve all of the challenges in the homework. These also cover ideas that go beyond what's in the homework. 
 
