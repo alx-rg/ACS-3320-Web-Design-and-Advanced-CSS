@@ -67,17 +67,17 @@ In a nutshell `transition` causes changes to CSS properties to change over time 
 
 ```CSS
 .a {
-	width: 100px;
-	height: 100px;
-	background-color: #f00;
-	/* Sets the time to apply changes to this element */
-	transition: 400ms;
-	/* s = secs ms = milliseconds */
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
+  /* Sets the time to apply changes to this element */
+  transition: 400ms;
+  /* s = secs ms = milliseconds */
 }
 
 .a:hover {
-	/* These changes occur over the transition time set above */
-	transform: scale(1.25) rotate(12deg);
+  /* These changes occur over the transition time set above */
+  transform: scale(1.25) rotate(12deg);
 }
 ```
 
@@ -94,9 +94,9 @@ Assign keyframe animation a name, `scaleAndRotate` in the example below.
 Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
 ```CSS
 @keyframes scaleAndRotate {
-	0% { transform: scale(0.5) rotate(0); }
-	50% { background-color: blue; }
-	100% { transform: scale(1.0) rotate(23deg); }
+  0% { transform: scale(0.5) rotate(0); }
+  50% { background-color: blue; }
+  100% { transform: scale(1.0) rotate(23deg); }
 }
 ```
 
@@ -106,12 +106,12 @@ The `animation` property applies an animation to an element. The line: `animatio
 
 ```CSS
 div {
-	width: 100px;
-	height: 100px;
-	background: red;
-	position :relative;
-	/* name duration iteration-count */
-	animation: scaleAndRotate 5s infinite;
+  width: 100px;
+  height: 100px;
+  background: red;
+  position :relative;
+  /* name duration iteration-count */
+  animation: scaleAndRotate 5s infinite;
 }
 ```
 
@@ -152,7 +152,7 @@ Pair up with someone you haven't paired with in-class before and take a look at 
 
 See the [example](lesson-02-example.html)
 
-## After Clss
+## After Class
 
 Follow these video tutorials. These videos walk through how to solve all of the challenges in the homework. These also cover ideas that go beyond what's in the homework. 
 
