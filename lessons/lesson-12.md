@@ -138,12 +138,23 @@ Find a past project and apply SASS to that project. Rewrite and compile the styl
 - SASS Variables
 - Use SASS operators and expressions
 - Use @for
+- Use the SASS nested selector syntax
+
+Use the SASS docs. Read up on the following. 
+
+- https://sass-lang.com/guide
+- https://sass-lang.com/documentation
+	- https://sass-lang.com/documentation/variables
+	- https://sass-lang.com/documentation/operators
+	- https://sass-lang.com/documentation/at-rules
+	- https://sass-lang.com/documentation/style-rules
 
 ## Additional Resources
 
+- https://sass-lang.com
 
 
-## Minute-by-Minute [OPTIONAL]
+<!-- ## Minute-by-Minute [OPTIONAL]
 
 | **Elapsed** | **Time**  | **Activity**              |
 | ----------- | --------- | ------------------------- |
@@ -152,4 +163,4 @@ Find a past project and apply SASS to that project. Rewrite and compile the styl
 | 0:20        | 0:45      | In Class Activity I       |
 | 1:05        | 0:10      | BREAK                     |
 | 1:15        | 0:45      | In Class Activity II      |
-| TOTAL       | 2:00      |                           |
+| TOTAL       | 2:00      |                           | -->
