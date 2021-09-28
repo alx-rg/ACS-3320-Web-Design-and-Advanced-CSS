@@ -52,7 +52,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  8 |  Thu, Sep 16 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
 |  9 |  Tue, Sep 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Thu, Sep 23 | [Lesson 10 Animation] | Animation |
-| 11 |  Tue, Sep 28 | [Lesson 11 Before and after] | - |
+| 11 |  Tue, Sep 28 | [Lesson 11 CSS Preprocessors] | - |
 | 12 |  Thu, Sep 30 | Web Components 1 | - |
 | 13 |  Tue, Oct  5 | Present your work | - |
 | 14 |  Thu, Oct  7 | Final Assessment | - |
@@ -68,7 +68,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 8 Styling Navbars]: lessons/lesson-08.md
 [Lesson 9 Form Controls]: lessons/lesson-09.md
 [Lesson 10 Animation]: lessons/lesson-10.md
-[Lesson 11 Before and after]: lessons/lesson-11.md
+[Lesson 11 CSS Preprocessors]: lessons/lesson-12.md
 
 [Lesson 12]: lessons/lesson-12.md
 [Lesson 13]: lessons/lesson-13.md
