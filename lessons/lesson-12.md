@@ -2,7 +2,7 @@
 
 Preprocessors intro
 
-## Review
+<!-- ## Review
 
 ```HTML
 <div class="product">
@@ -19,23 +19,29 @@ Hints:
 - The box is `100px` by `100px`
 - The circle is `30px` by `30px`;
 - Use `relative` and `absolute` position to position the circle
-- Use `::before` to add the `$`
+- Use `::before` to add the `$` -->
 
 ## What are preprocessors?
 
-A pre processor processes code before it is used. A CSS preprocessor processes your CSS before it's used by in the browser. 
+A pre processor processes code *before* it is used. A CSS preprocessor processes your CSS before it's used by in the browser. 
 
-How does the preprocessor work? You write code in a language that is similar to but not the same as standard CSS. This code is run through the processed and outputs standard CSS. 
+How does the preprocessor work? You write code in a language that is *similar to* standard CSS. The preprcoessor reads this this code and outputs standard CSS. 
 
-The language you will use in these lessons is SASS. You'll also use sass in the terminal to process your SASS code into CSS. 
+The language we will use in these lessons is SASS. You'll also use sass in the terminal to process your SASS code into CSS. 
 
 Read more about SASS from the source: https://sass-lang.com
+
+There are several CSS preprocessors the two most popular are LESS and SASS. 
+
+NOTE! SASS has two versions SASS and SCSS. These are similar and compiled the same. SASS uses a syntax closer to Python where the the indentation matters. While SCSS uses a syntax that is closer to regular CSS. We are going to use SCSS for these lessons. 
+
+Any CSS code you write is compatible with SCSS. Using SCSS you can write the regular CSS that you already know and use the extra features of SASS covered below. 
 
 ## Why Learn SASS
 
 All large production apps process code for a variety of reasons. Expect to see SASS in any production environment. 
 
-You may also like the features that SASS offers and want to use them in your work to boost productivity! 
+You may also like the features that SASS offers and want to use them in your work to boost your productivity! 
 
 ## Video Lesson
 
@@ -73,7 +79,7 @@ Create a new file: `styles.scss`
 
 The `.scss` file extension is used for SASS files! 
 
-**Note! You can not load `.scss` in to a browser! This file will need to be processed and output to a `.css` file first!**
+**Note! You can not load `.scss` in to a browser! This file must need to be processed and output to a `.css` file first!**
 
 Add some code to `styles.css`:
 
@@ -106,7 +112,6 @@ We will cover some of the features of SASS in this lesson you can look at the SA
 
 SASS is a a language that compiles to vanilla CSS. It uses the same syntax as the CSS language. This means anything that works in normal CSS is okay in SASS. 
 
-
 ### SASS Features
 
 SASS adds some new rules. 
@@ -114,9 +119,11 @@ Read about the nesting rules here: https://sass-lang.com/documentation/style-rul
 
 Properties can be declared using operators allowing SASS to perform typical math operations on expressions: https://sass-lang.com/documentation/style-rules/declarations
 
-In SASS you can define variables. This helps keep your code DRY. SASS variables are NOT the same as CSS custom properties! https://sass-lang.com/documentation/variables
+In SASS you can define variables. This helps keep your code DRY. 
 
-SASS also supports flow control. These are features you find in other languages such as 
+SASS variables are NOT the same as CSS custom properties! https://sass-lang.com/documentation/variables
+
+SASS also supports flow control. These are features you find in other languages such as conditional logic, and loops. SASS also supports expressions. 
 
 ## After Class
 
@@ -129,7 +136,7 @@ Assignment 2:
 Find a past project and apply SASS to that project. Rewrite and compile the stylesheet with SASS. Use the following: 
 
 - SASS Variables
-- Use SASS operators
+- Use SASS operators and expressions
 - Use @for
 
 ## Additional Resources
