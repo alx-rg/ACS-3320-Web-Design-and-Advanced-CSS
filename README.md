@@ -53,9 +53,10 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  9 |  Tue, Sep 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Thu, Sep 23 | [Lesson 10 Animation] | Animation |
 | 11 |  Tue, Sep 28 | [Lesson 11 CSS Preprocessors] | - |
-| 12 |  Thu, Sep 30 | Web Components 1 | - |
-| 13 |  Tue, Oct  5 | Present your work | - |
-| 14 |  Thu, Oct  7 | Final Assessment | - |
+| 12 |  Thu, Sep 30 | [Lesson 12 Web Components 1] | - |
+| 13 |  Thu, Sep 30 | [Lesson 13 Web Components 2] | - |
+| 14 |  Tue, Oct  5 | Present your work | - |
+| 15 |  Thu, Oct  7 | Final Assessment | - |
 
 <!-- Lessons -->
 [Lesson 1 CSS Review]: lessons/lesson-01.md
@@ -69,6 +70,8 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 9 Form Controls]: lessons/lesson-09.md
 [Lesson 10 Animation]: lessons/lesson-10.md
 [Lesson 11 CSS Preprocessors]: lessons/lesson-12.md
+[Lesson 12 Web Components 1]: lessons/lesson-15.md
+[Lesson 13 Web Components 2]: lessons/lesson-16.md
 
 [Lesson 12]: lessons/lesson-12.md
 [Lesson 13]: lessons/lesson-13.md
