@@ -1,6 +1,6 @@
 # FEW 2.2 - Advanced CSS - Exploring Web Components
 
-Continuing the discussion of Web Components from lesson 8. 
+Discussion of Web Components from lesson 8. 
 
 ## Why you should know this?
 
@@ -54,12 +54,12 @@ Imagine creating carousel above with a custom carousel tag like this:
 
 ```HTML
 <frmwrk-slides time="5000">
-	<img src="./images/kitten-0.jpeg" width="259" height="194">
-	<img src="./images/kitten-1.jpeg" width="257" height="196">
-	<img src="./images/kitten-2.jpeg" width="259" height="194">
-	<img src="./images/kitten-3.jpeg" width="275" height="183">
-	<img src="./images/kitten-4.jpeg" width="275" height="183">
-	<img src="./images/kitten-5.jpeg" width="275" height="183">
+  <img src="./images/kitten-0.jpeg" width="259" height="194">
+  <img src="./images/kitten-1.jpeg" width="257" height="196">
+  <img src="./images/kitten-2.jpeg" width="259" height="194">
+  <img src="./images/kitten-3.jpeg" width="275" height="183">
+  <img src="./images/kitten-4.jpeg" width="275" height="183">
+  <img src="./images/kitten-5.jpeg" width="275" height="183">
 </frmwrk-slides>
 ```
 
