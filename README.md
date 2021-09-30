@@ -54,8 +54,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 | 10 |  Thu, Sep 23 | [Lesson 10 Animation] | Animation |
 | 11 |  Tue, Sep 28 | [Lesson 11 CSS Preprocessors] | - |
 | 12 |  Thu, Sep 30 | [Lesson 12 Web Components 1] | - |
-| 13 |  Thu, Sep 30 | [Lesson 13 Web Components 2] | - |
-| 14 |  Tue, Oct  5 | Present your work | - |
+| 14 |  Tue, Oct  5 | [Lesson 13 Web Components 2] | - |
 | 15 |  Thu, Oct  7 | Final Assessment | - |
 
 <!-- Lessons -->
