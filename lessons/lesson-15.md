@@ -1,6 +1,6 @@
 # FEW 2.2 - Advanced CSS - Exploring Web Components
 
-Continuing the discussion of Web Components from lesson 8. 
+Discussion of Web Components from lesson 8. 
 
 ## Why you should know this?
 
