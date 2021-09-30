@@ -263,7 +263,7 @@ https://github.com/Make-School-Labs/simple-component
 
 There is a folder named: `01-simple-component`. You should try and work through each of these examples. In each of the 7 examples there is some starter code with comments describing what to do. 
 
-## Minute-by-Minute [OPTIONAL]
+<!-- ## Minute-by-Minute [OPTIONAL]
 
 | **Elapsed** | **Time** | **Activity** |
 | ----------- | --------- | ------------------------- |
@@ -272,5 +272,5 @@ There is a folder named: `01-simple-component`. You should try and work through 
 | 0:20 | 0:45 | In Class Activity I |
 | 1:05 | 0:10 | BREAK |
 | 1:15 | 0:45 | In Class Activity II |
-| TOTAL | 2:00 | |
+| TOTAL | 2:00 | | -->
 
