@@ -84,7 +84,7 @@ Using the inspector find the `shadow content` or `Shadow-Root`. You will need to
 
 ## Getting Started with Web Components
 
-Work through the challenges here: https://github.com/Make-School-Labs/simple-component
+Work through the challenges here: https://github.com/Tech-at-DU/simple-component
 
 Follow this by studying the guide here:
 
@@ -115,7 +115,7 @@ When using custom tags you must use a closing tag, even if the tag is empty.
 - `<my-component></my-component>` good
 - `<frmwrk-blink></frmwrk-blink>` good
 - `<my-component />` bad
-- `<frmwrk-blink>` worse
+- `<frmwrkblink>` worse
 
 It's a good idea to prefix all of your names with the name of your framework. For example, if Bootstrap used web components all of their tags could start with `bs-`:
 
