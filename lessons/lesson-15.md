@@ -259,9 +259,17 @@ attributeChangedCallback(name, oldValue, newValue) {
 
 Your goal is to solve the web component problems here: 
 
-https://github.com/Make-School-Labs/simple-component
+https://github.com/Tech-at-DU/simple-component
 
 There is a folder named: `01-simple-component`. You should try and work through each of these examples. In each of the 7 examples there is some starter code with comments describing what to do. 
+
+Follow the video lessons here: 
+
+- https://www.youtube.com/watch?v=HAKiLAvt5ho&list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX&index=52
+
+## Resources 
+
+- https://www.youtube.com/watch?v=HAKiLAvt5ho&list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX&index=52
 
 <!-- ## Minute-by-Minute [OPTIONAL]
 
