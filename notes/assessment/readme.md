@@ -1,6 +1,6 @@
 # FEW 2.2 Final Assessment 
 
-Your job is to style the color.com website. Do your best. Use your CSS framework as a starting point. You don't have to write all of the styles from scratch! 
+Your job is to style the color.fun website. Use your CSS framework as a starting point. You don't have to write all of the styles from scratch!
 
 Feel free to modify the HTML markup on the page in any way that you wish. You must not break the functionality! Two things happen here: 
 
@@ -9,15 +9,32 @@ Feel free to modify the HTML markup on the page in any way that you wish. You mu
 
 Use your CSS framework! Your framework styles should cover much of the problems here. You will have to write some CSS to fill in some details.
 
-Problems 5 and 7 will not be covered by your framework. You'll need to solve these from scratch. 
+Some problems will not be covered by your framework for these you will need to write your own styles. 
 
-## 1 Typography
+## 1 Page structure
 
-Set the font style for text and headings. All fonts on the page should be styled. I should not see the default Times New Roman anywhere! 
+The page is structured as: 
 
-**What do to** Style the text including the headings. 
+- main
+	- section#nav
+	- section#banner
+	- section#about
+	- section#popular
+	- section#swatches
+	- section#cart
+	- section#contact
 
-## 2 Style The Navbar 
+Each section should have a `min-height` equal to the height of the window. Some sections might need to be larger. So `min-height` would be the best coice. 
+
+**What to do**: Give each section a `min-height` of 100vh;
+
+## 2 Typography
+
+Set the font style for text and headings. All fonts on the page should be styled. **I should not see the default Times New Roman anywhere!** 
+
+**What do to** Style the text content. This includes: text (paragraphs etc.) headings, and links. None of these elements should have the default HTML appearance. 
+
+## 3 Style The Navbar 
 
 Style the navbar and links. The navbar should include the links and the page title.
 
@@ -25,41 +42,45 @@ Style the navbar and links. The navbar should include the links and the page tit
 
 **Extra credit:** Make the navbar sticky. A sticky navbar always stays at the top of the page even when the page scrolls. 
 
-## 3 Style cards 
+## 4 Style cards 
 
 These cards have an image and text. **The cards should sit in a horizontal row.** 
 
-**What to do:** In `section#popular` there are three divs each containing an image and a paragraph. Style these so that look like cards. The cards should be arranged in a horizontal row, use flex. 
+**What to do:** In `section#popular` there are three divs each containing an image and a paragraph. Style these so that they look like cards. The cards should be arranged in a horizontal row, use flex. 
 
-## 4 Style Colors
+There is an image in each card. Style these images so they look nice and fit the card. 
 
-The color swatches don't have any color at the moment. Your goal is to style them. Give them a background color and/or a border. You should arrange these with CSS grid. The size and number of columns and rows are up to you. 
+## 5 Style Colors
 
-**What to do:** Arrange the color divs in the #swatches section in a grid. 
+The `section#swatches` contains 100 `div.swatch` elements. Each of these is a color that is for sale! Currently each swatch looks like a red box. You'll give each one of these a color in the next step. 
 
-### 5 Genereate 100 colors
+Clicking a swatch will add it to the shopping cart. 
 
-There are 100 color swatches but there are no colors. You need to generate 100 unique colors and display them in the swatches. You can do this in any way you like. 
+**What to do:** Arrange the color divs in the #swatches section in a grid. Change the size of the swatches. The current style makes each swatch is 100px by 100px. They can be any other size! 
 
-Note that all colors have an inline style set to a custom property named: --color-0 to --color-99. Generating 100 colors programmatically might be a good solution. 
+### 6 Genereate 100 colors
+
+There are 100 color swatches but all 100 are red. You need to generate 100 unique colors and display each color in a swatch. You can do this in any way you like. 
 
 Possible solutions for this problem would be to use JS or SASS. 
 
 1) JS solution would need to assign an inline color to each color swatch. 
 
-2) The SASS solution would require using a loop to generate style rules for all 100 color properties. The output should look like this: 
+2) The SASS solution would require using a loop to generate style rules for all 100 color properties. Notice that each color has a class name of `color-#` where # is the color number. Your SASS code could generate something like:  
 
 ```CSS
---color-0: hsl(0, 100%, 50%);
---color-1: hsl(3, 100%, 50%);
---color-2: hsl(6, 100%, 50%);
---color-3: hsl(9, 100%, 50%);
-...
+.color-0 { background-color: red; }
+.color-1 { background-color: green; }
+.color-2 { background-color: blue; }
 ```
 
 **What to do:** Generate 100 colors. Make sure each color swatch has a unique color. 
 
-## 6 Shopping cart 
+Make sure each swatch displays a different color! 
+
+NOTE! Each swatch needs to keep the class name: `add-to-cart` or it will break the shopping cart system! 
+
+## 7 Shopping cart 
 
 Clicking a color swatch adds it to the shopping cart. The cart is a list and each row is made up of some text, buttons, and an input. **You should style these.**
 
@@ -67,17 +88,27 @@ In this step, your goal is to style the form elements that show up in the shoppi
 
 The cart displays when you click a swatch. You won't see it unless you click a swatch to add a swatch to the cart! 
 
+If you need to change the structure of the shopping cart list item you can. Look for it in the script tag at the bottom of the page, there is a comment calling it out. 
+
 **What to do:** Style the shopping cart. There is text, input, and three buttons here. All three of these things should have a style! 
 
-## 7 Style the contact form
+Be sure to style all of the form elements: buttons and inputs!
+
+## 8 Style the contact form
 
 At the bottom of the page is a contact form. Your goal is to style this. 
 
-None of the elements should use the default styles and all elements should look the same. 
+**None of the elements should use the default styles.**
 
-**What to do:** Style the form elements. There are several inputs and a button, style all of these. 
+**What to do:** Style the form elements. There are several inputs and a button, style all of these.
 
-## 8 Ticker Tape 
+## 9 Center the content of each section
+
+Center the content of each section. I'll leave this up to you to how you handle it. generally the content should be centered. Especially for the banner, card, and contact sections. For other sections you may decide otherwise. 
+
+**What to do**: Arrange the content in each section. Use flex to place the content in the center of a section or arrange it another way.
+
+## 10 Ticker Tape 
 
 Create a web component that animates the text inside with a ticker-tape effect. Use the ticker tape component at the top of the page to animate the text: `<h1>...Color.com is awesome...</h1>`. 
 

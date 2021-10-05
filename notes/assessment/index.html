@@ -41,7 +41,7 @@
 			</section>
 
 			<!-- banner -->
-			<section>
+			<section id="banner">
 				<ticker-tape><h1>...Color.com is awesome...</h1></ticker-tape>
 			</section>
 
@@ -179,8 +179,6 @@
 				const swatch = `
 				<div 
 					class="swatch add-to-cart color-${i}" 
-					style="background-color: 
-					var(--color-sample-${i});" 
 					data-color="Color ${i}" 
 					data-price="${(Math.random() * 10).toFixed(2)}"></div>`
 				document.querySelector('.swatches').innerHTML += swatch
@@ -266,6 +264,7 @@
       function showCart() {
         let str = ''
         for (let i = 0; i < cart.length; i += 1) {
+					// Shopping cart list item! 
           str += `<li>
             <span>
 							<span>${cart[i].name}</span>
