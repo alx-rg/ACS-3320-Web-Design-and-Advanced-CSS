@@ -28,6 +28,8 @@ Each section should have a `min-height` equal to the height of the window. Some 
 
 **What to do**: Give each section a `min-height` of 100vh;
 
+The nav bar doesn't need to follow this and any other section that you think doesn't work with this can be a size that you think works better. 
+
 ## 2 Typography
 
 Set the font style for text and headings. All fonts on the page should be styled. **I should not see the default Times New Roman anywhere!** 
