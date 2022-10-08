@@ -42,20 +42,21 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 
 | Class |    Date   |             Topics           | Assignment |
 |:-----:|:---------:|:-----------------------------|:-----------|
-|  1 |  Tue, Aug 24 | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
-|  2 |  Thu, Aug 26 | [Lesson 2 Typography]        | - |
-|  3 |  Tue, Aug 31 | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
-|  4 |  Thu, Sep  2 | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
-|  5 |  Tue, Sep  7 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
-|  6 |  Thu, Sep  9 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
-|  7 |  Tue, Sep 14 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
-|  8 |  Thu, Sep 16 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
-|  9 |  Tue, Sep 21 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
-| 10 |  Thu, Sep 23 | [Lesson 10 Animation] | Animation |
-| 11 |  Tue, Sep 28 | [Lesson 11 CSS Preprocessors] | - |
-| 12 |  Thu, Sep 30 | [Lesson 12 Web Components 1] | - |
-| 14 |  Tue, Oct  5 | [Lesson 13 Web Components 2] | - |
-| 15 |  Thu, Oct  7 | Final Assessment | - |
+|  1 |  Wed, Oct 19 | [Lesson 1 CSS Review]        | [CSS Diner CSS ZenGarden Type] |
+|  2 |  Mon, Oct 24 | [Lesson 2 Typography]        | - |
+|  3 |  Wed, Oct 26 | [Lesson 3 Box Model Flex]    | [CSS Zen Garden Card and Button] |
+|  4 |  Mon, Oct 31 | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
+|  5 |  Wed, Nov  2 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
+|  6 |  Mon, Nov  7 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
+|  7 |  Wed, Nov  9 | [Lesson 7 Make a CSS Framework] | [Your CSS Framework] |
+|  8 |  Mon, Nov 14 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
+|  9 |  Wed, Nov 16 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
+| 10 |  Mon, Nov 21 | [Lesson 10 Animation] | Animation |
+| 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
+| 12 |  Mon, Nov 28 | [Lesson 11 CSS Preprocessors] | - |
+| 13 |  Wed, Nov 30 | [Lesson 12 Web Components 1] | - |
+| 14 |  Mon, Dec  5 | [Lesson 13 Web Components 2] | - |
+| 15 |  Mon, Dec  5 | Final Assessment | - |
 
 <!-- Lessons -->
 [Lesson 1 CSS Review]: lessons/lesson-01.md
