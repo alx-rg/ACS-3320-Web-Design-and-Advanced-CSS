@@ -34,4 +34,10 @@ None of these is very "arty" don't worry about it. Just make the information rea
 
 2. You feel inspired and want to express your creative ideas. Go for it! Do whtever you like. 
 
+## Resources
+
+- [Style the CSS Zen Garden page](#style-the-zen-garden-page)
+	- http://www.csszengarden.com
+	- [CSS Zen Garden HTML Source](http://www.csszengarden.com/examples/index)
+	- Follow Lesson 01 1-3 in this video playlist: https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
