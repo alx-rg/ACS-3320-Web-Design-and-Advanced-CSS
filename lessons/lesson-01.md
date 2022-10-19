@@ -6,6 +6,10 @@ CSS Review
 
 Understanding CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that lets you determine the appearance of anything in the browser. 
 
+### Disclaimer: 
+
+This may seem like a class about design and creative visual ideas, and you may feel like you don't have any of these. If this is the case I want you to find ideas that you see on the web and try and recreate these in your projects for this class. 
+
 ## Review 
 
 How much CSS do you know?
