@@ -2,9 +2,9 @@
 
 CSS Review 
 
-## Why you should know this 
+## Why should you know this?
 
-Understanding the basics of CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that lets you determine the appearance of anything in the browser. 
+Understanding CSS the language and the syntax is the gateway to using CSS. CSS is a powerful tool that lets you determine the appearance of anything in the browser. 
 
 ## Review 
 
@@ -12,7 +12,7 @@ How much CSS do you know?
 
 ## Using CSS
 
-### Where can put CSS?
+### Where can you put CSS?
 
 - CSS can be written in external files with the .css file extension.
 - CSS can be written in the style tag anywhere in an HTML document. 
@@ -31,6 +31,7 @@ Link to a file using the link tag.
 ```CSS 
 /* style.css */
 /* Your CSS code here... */
+/* Code here applies styles to everthing on the page */
 ```
 
 #### Using the Style tag
@@ -41,6 +42,7 @@ Anywhere in an HTML document.
 <style>
 	/* Everything here is written in the CSS language */
 	/* ... */
+	/* Code here applies styles to everything on the page */
 </style>
 ```
 
@@ -51,6 +53,27 @@ Inline styles are added to any tag, these styles style that tag.
 ```HTML
 <h1 style="color: red">Inline Styles</h1>
 <p style="color:maroon; font-size:1.2em">Separate each style rule with a semicolon!</p>
+<!-- The style rule above only applies to the element! -->
+```
+
+#### Styling with JS
+
+You can style elements with JS. All elements have a style property. All CSS properties exist on the style property using a camelcase name.
+
+```JS
+const el = document.querySelector('#my-input')
+el.style.fontSize = '1rem' // names are camelcase
+el.style.padding = '0.5rem' // use the same values 
+el.style.border = '1px solid' // if it isn't a number use quotes
+```
+
+This will show up as an inline style! 
+
+```HTML
+<input 
+	id="my-input"
+	style="font-size: 1rem; padding: 0.5rem; border: 1px solid"
+>
 ```
 
 ### Writing CSS
@@ -66,7 +89,7 @@ h1 {
 }
 ```
 
-The rule above selects all h1 tags and makes them 32px and red. 
+The rule above selects all h1 tags and makes them `32px` and `red`. 
 
 #### Selectors
 
@@ -78,7 +101,7 @@ The selector language is powerful. Think of it as a language that allows you to 
 
 Besides being used for CSS styles the selector language is also useful with JavaScript to give your code access to elements on the page. 
 
-There are a lot of selectors. Too many to cover them all here. Here are a few that you should know: 
+There are many selectors. Too many to cover them all here. Here are a few that you should know: 
 
 Name selector - uses the tag
 
@@ -184,7 +207,11 @@ Pseudo selectors: There are lots of pseudo-selectors they all begin with a colon
 
 ```HTML
 <ul class="menu">
-	<li><ul><li></li></ul></li>
+	<li>
+		<ul>
+			<li></li>
+		</ul>
+	</li>
 </ul>
 <ul class="options">
 	<li></li>
@@ -206,9 +233,11 @@ li:nth-child(odd) { /* Selects all odd indexed elements */ }
 
 Did you get all that? This has more than a few options!
 
+Don't memorize the options! Instead, know that nth-child will select an element by it's index. Look up the options when you need them. 
+
 ### Exercise: CSS Selectors
 
-practice with your CSS selectors. You need to master these. You may have done this exercise before, you need to do it again until you can breeze through it without stopping to think or using trial and error to get the answers! 
+Practice with your CSS selectors. You need to master these. You may have done this exercise before, you need to do it again until you can breeze through it without stopping to think or using trial and error to get the answers!
 
 Seriously you need to master selectors! 
 

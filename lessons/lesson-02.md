@@ -64,6 +64,8 @@ A big part of choosing fonts is understanding your brand. While a brand includes
 
 https://venngage.com/blog/brand-fonts/
 
+Notie the type used in the examples websites above is all san serif. The forns are clean and easy to read. This gives an impression of being clean, stable, and reliable. Good qualities to express to your customers. 
+
 ### Serif vs San Serif
 
 Fonts can be classified into broad groups. The two most popular fonts used for web design fall into these groups: Serif and Sans Serif. 
@@ -75,12 +77,13 @@ What's the difference? Serif fonts have a serif, which are the little details at
 What's the significance? Sans Serif fonts are generally easier to read on the screen.
 
 - Serif 
-	- Looks better and reads better in print
+	- Reads better in print
 	- Tends to look "old school", respectable, and formal
-	- Tend to be easier to read at small point sizes
+	- Easier to read at small point sizes
 - San Serif
 	- Clean, stable, and reliable
 	- Looks modern and youthful
+	- Reads better on screen
 
 ### How to choose a font? 
 
