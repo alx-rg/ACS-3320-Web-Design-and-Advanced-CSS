@@ -41,3 +41,60 @@ None of these is very "arty" don't worry about it. Just make the information rea
 	- [CSS Zen Garden HTML Source](http://www.csszengarden.com/examples/index)
 	- Follow Lesson 01 1-3 in this video playlist: https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
+## What to style?
+
+You should style everything! But where to start? Look at the page and think about what is there. Here is a rough outline: 
+
+- Page heading and title
+- Major sections: 
+	- The Road to Enlightenment
+	- So what is this all about?
+	- Participation
+	- Benefits 
+	- Requirements
+	- Footer (this might be hard to spot try and find it)
+	- Select a Design
+	- Archives
+	- Resources
+
+Within each of the sections the content usually starts with a heading followed by one or more paragraphs. 
+
+Some sections could use special consideration. 
+
+### Page header and title section
+
+The page header and title section has two headings followed by teo paragraphs. The second paragraph contains links to the HTML and CSS files.
+
+### Footer
+
+This doesn't really seem to be a footer but it's wrapped in the footer tag. It lists HTML, CSS, CC, A11y, and GH. These are links to things like the W3C validator. 
+
+While these can be links they might benefit from being displayed as larger icons or buttons. 
+
+### Select a design
+
+This is a list of designs. Each list item contains the name of the design, and the name of the author separated by the word "by". 
+
+This could benefit from giving the name and author different styles. Which is not easily done without carefully considering your selectors! 
+
+### Archives 
+
+Archives is aother list with two items "Next Designs >" and "View all Designs". 
+
+Again, this might benefit from being styled as a button or using an icon. 
+
+## Styling Strategies
+
+Start large and work into the details. 
+
+It is very important to understand the structure of the Zen Garden page from both the content and the DOM. Read the page and identify sections and subsections. 
+
+Read the source code in the HTML document and identify parents, children, ancestors, and descendents. 
+
+- Pick a font for the entire page
+- Think about line height
+	- Advanced: Remove margins and set the margins yourself!
+- Choose a font and size for the headings
+- Pick a forground and background color
+- Style the links
+	- Think about the color and text decoration
