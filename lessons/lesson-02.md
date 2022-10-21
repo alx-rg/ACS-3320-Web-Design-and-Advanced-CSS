@@ -68,7 +68,7 @@ https://venngage.com/blog/brand-fonts/
 
 Notice the type used in the examples websites above is all san serif. The letter forms are clean and easy to read. This gives an impression of being stable, and reliable. Good qualities to express to your customers. 
 
-Would you use <span style="font-family: fantasy">GitHub</span>?
+Would you use <span style="font-family: Times">GitHub</span>?
 
 ### Serif vs San Serif
 
