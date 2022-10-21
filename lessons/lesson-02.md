@@ -48,6 +48,8 @@ Take a look at these sites:
 - https://www.apple.com
 - https://www.android.com
 - https://www.nike.com
+- https://github.com
+- https://medium.com
 
 Find some type you like and look at the properties used: 
 
@@ -60,11 +62,13 @@ Find some type you like and look at the properties used:
 
 Fonts come in a wide variety. Fonts give form and visual style to the ideas and message. 
 
-A big part of choosing fonts is understanding your brand. While a brand includes lots of things beyond just type it will help to understand what a brand. Luckily I found a 3 min video and a page describing what a brand identity is: 
+A big part of choosing fonts is understanding your brand. While a brand includes lots of things beyond just type it will help to understand that brand. Watch this 3 min video describing brand identity: 
 
 https://venngage.com/blog/brand-fonts/
 
-Notie the type used in the examples websites above is all san serif. The forns are clean and easy to read. This gives an impression of being clean, stable, and reliable. Good qualities to express to your customers. 
+Notice the type used in the examples websites above is all san serif. The letter forms are clean and easy to read. This gives an impression of being stable, and reliable. Good qualities to express to your customers. 
+
+Would you use <span style="font-family: fantasy">GitHub</span>?
 
 ### Serif vs San Serif
 
