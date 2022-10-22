@@ -68,7 +68,7 @@ https://venngage.com/blog/brand-fonts/
 
 Notice the type used in the examples websites above is all san serif. The letter forms are clean and easy to read. This gives an impression of being stable, and reliable. Good qualities to express to your customers. 
 
-Would you use <span style="font-family: Times">GitHub</span>?
+Would you use GitHub their font was [Comic Sans](https://en.wikipedia.org/wiki/Comic_Sans)?
 
 ### Serif vs San Serif
 
@@ -78,14 +78,12 @@ Fonts can be classified into broad groups. The two most popular fonts used for w
 
 What's the difference? Serif fonts have a serif, which are the little details at the extents of the letter shapes. Sans Serif fonts don't have serifs! 
 
-What's the significance? Sans Serif fonts are generally easier to read on the screen.
+What's the significance? Sans Serif fonts are generally easier to read on the screen. While Serif Fonts read better in print. 
 
 - Serif 
 	- Reads better in print
 	- Tends to look "old school", respectable, and formal
-	- Easier to read at small point sizes
 - San Serif
-	- Clean, stable, and reliable
 	- Looks modern and youthful
 	- Reads better on screen
 
@@ -93,7 +91,11 @@ What's the significance? Sans Serif fonts are generally easier to read on the sc
 
 Without a brand, as a guide, you can think of choosing a font in more general terms. Ask yourself what fonts are available? You can only display fonts that are installed on any computer. 
 
-What fonts are installed?
+_While we migth want our apps to use fonts that we like it's often best to make our apps look like they belong by matching the font to a font used by the operating system._ 
+
+Q: What fonts are installed?
+
+A: It depends on the system and version!
 
 In the old days we had these: 
 
@@ -128,6 +130,10 @@ You can split these fonts between serif and sans serif:
 
 It's hard to choose a font that works on every system. 
 
+And these fonts are a little meh (not so great).
+
+Luckily there are a few more options if you are willing to use different fonts on different systems! In some ways this is can be a better choice because it will allow your app to look "native" on any system.  
+
 #### Font Stack
 
 The font stack is a list of fonts from which the browser will choose the first it from the list is available. 
@@ -140,7 +146,7 @@ body {
 }
 ```
 
-The system also provides a couple of extra font options named: `serif` and `sans-serif`. These options choose the default system serif or San serif font. 
+The system also provides a couple extra font options named: `serif` and `sans-serif`. These options choose the default system serif or san serif font. 
 
 For example, if you wanted to use the default system sans serif font if Helvetica and Arial were not available, your font stack might become: 
 
@@ -170,6 +176,8 @@ Here is a chart of current systems, the version, and the default font.
 | Android | Cupcake (1.5) to Honeycomb (3.2.6) | Droid Sans |
 | Ubuntu | All versions | Ubuntu |
 
+Wow, so the system font changes for different versions of the operating system!
+
 Along with this comes a few new keywords for these new system fonts. 
 
 | Font | Device Targeted |
@@ -177,6 +185,8 @@ Along with this comes a few new keywords for these new system fonts.
 | -apple-system (San Francisco) | iOS Safari, macOS Safari, macOS Firefox |
 | BlinkMacSystemFont (San Francisco) | macOS Chrome |
 | sans-serif | Any |
+
+But what font stacks do professional apps use? 
 
 #### What are common font Stacks? 
 
@@ -194,7 +204,7 @@ Medium and WordPress
 
 ```CSS
 body {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 ```
 
@@ -213,7 +223,7 @@ Without going too far into the issue of fonts and copyright, let's start with Go
 
 https://fonts.google.com
 
-Looks like Google has a library of 1052 fonts! That's a lot to wade through. Google Fonts has a great search feature. You can search by categories and other features. 
+Looks like Google has a library of 1455 fonts! That's a lot to wade through. Google Fonts has a great search feature. You can search by categories and other features. 
 
 Here is a site that has curated their top 40 Google Fonts: 
 
@@ -286,7 +296,7 @@ Since we're just working with type for now concentrate on the following properti
 
  ### CSS Units 
 
- CSS has the amazing ability to use a wide variety of units. To be a master of CSS you must understand these units!
+CSS has the amazing ability to use a wide variety of units. To be a master of CSS you must understand these units!
 
 **Absolute Units**
 
