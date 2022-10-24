@@ -10,7 +10,7 @@
 Read the CSS below:
 
 ```CSS
-html {
+body {
 	font-size: 14px;
 }
 
@@ -44,9 +44,9 @@ Watch videos: lesson 03 1-6
 
 ## The Box Model
 
-The box model describes how everything is sized on the CSS. 
+The box model describes how everything is sized with CSS. 
 
-The Box Model applies to all **block** elements. Looking at any element on a page it will either display as inline or block. 
+The Box Model applies to all **block** elements. Any element on a page it will either display as inline or block. 
 
 Think of inline elements like words in a block of text. The flow is left to right and wrap when they reach the extent of their container. 
 
@@ -140,7 +140,7 @@ Buttons can vary widely in design and solutions can be very creative. What is pr
 
 Float is a property used to wrap text around an image. A floated element moves to the left or the right and everything else tries to wrap around it. 
 
-Try this, here image each of the links on the Zen Garden page was an image. 
+Try this, here imagine each of the links on the Zen Garden page was an image. 
 
 ```CSS
 a {
@@ -162,9 +162,7 @@ Flex is a tool that arranges elements along an axis. The axis can be horizontal 
 
 Flex is a property that arranges the child elements. This is the core concept! All of the other flex properties apply to the children and determine how the children are arranged. 
 
-Solve the problems here: https://flexboxfroggy.com
-
-Submit your answers to GradeScope!
+Practice and review flex by solving the problems here: https://flexboxfroggy.com
 
 ## Creating Cards
 
@@ -177,8 +175,6 @@ A card presents one complete idea. you could think of this as a paragraph. Examp
 Card example:
 
 - https://www.awwwards.com/play-your-cards-right-exploring-the-cards-trend-in-web-design.html
-
-Some ideas to try: 
 
 ### Some Cards ideas
 
