@@ -294,7 +294,7 @@ Since we're just working with type for now concentrate on the following properti
 - `color`
 - `font-family`
 
- ### CSS Units 
+### CSS Units 
 
 CSS has the amazing ability to use a wide variety of units. To be a master of CSS you must understand these units!
 
@@ -376,12 +376,19 @@ body {
 
 ## Challenges 
 
-Continue the CSS Zen Garden challenges from Lesson 01. Incorporate the ideas from this module into your work. 
+Improve your typography follow these steps: 
 
-- Either use the system font stock or use some custom fonts
-	- Try pairing the font using a different font for headlines and body copy
-	- Try Using a single font family and use different weights for headlines and copy
-- Pay attention to type hierarchy
+- Decide on a font
+	- Choose a system font or a custom font
+	- Define your font stack
+- Set the base font size. This is important! 
+	- Set the base font size in px on the body element. 
+	- Set the base line-height on the body. Start with 1.5  and adjust from there. 
+- Set the font size for all of your headings. 
+	- When setting the size for all of the headings use rem For example: `h1: 2rem`. 
+Set margins for paragraphs and headings. 
+	- Set the top margins to 0 
+	- Start with bottom margin to 1rem. Adjust this if necessary. You can set this for all elements with: `p, h1, h2, h3 { ... }`
 
 ## After Class 
 
