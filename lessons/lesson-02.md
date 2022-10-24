@@ -363,14 +363,14 @@ body {
 	font-size: 22px; /* Sets base font size for everything! */
 } 
 
-/* Everything in summary will be 33px */
+/* Everything in .summary will be 33px (22 * 1.5) */
 .summary {
 	font-size: 1.5em; 
 }
 
-/* The first p tag is 44px. If this was an em it would be 66px */
 .summary > p: nth-child(1) {
-	font-size: 2rem; 
+	font-size: 2rem; /* 44px (22 * 2) */
+	/* font-size: 2em; 66px (33 * 2) */
 }
 ```
 
