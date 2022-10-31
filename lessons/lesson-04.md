@@ -283,6 +283,8 @@ It should also be reasonably sized.
 text, and display an icon in the center. The background image should not repeat. 
 The icons should be reasonably sized. 
 
+You can download the images [here](../images.zip). 
+
 Submit your work to GradeScope!
 
 Here are some pictures. 
