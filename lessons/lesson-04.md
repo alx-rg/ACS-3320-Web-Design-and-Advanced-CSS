@@ -1,48 +1,5 @@
 # FEW 2.2 Lesson 4 - Background Images
 
-## Review 
-
-Try these problems to assess your skills: 
-
-**Problem 1:**
-
-```HTML
-<ul>
-	<li>Apples</li>
-	<li>Oranges</li>
-	<li>Bananas</li>
-</ul>
-```
-
-- Use flex to arrange the elements in the list above in a row. 
-- Align them in the center on the cross axis. 
-- Bonus: remove the bullet
-
-**Problem 2:**
-
-```HTML
-<div>
-	<a>Messages: 99</a>
-	<a>Login</a>
-	<a>Settings</a>
-</div>
-```
-
-- Use flex to arrange the a tags above in a column
-- Align them to the right on the cross axis
-
-**Problem 3:**
-
-```HTML
-<div>
-	<div></div>
-</div>
-```
-
-- The outer div needs to be 500px wide by 500px tall
-- The inner div needs to be 20px wide and 20px tall
-- Use flex to place the inner div in the viertical and horizontal center of it's parent.
-
 ## Learning Objectives 
 
 - Use background images
@@ -283,9 +240,29 @@ h1 {
 }
 ```
 
+Important! When using background-position you can create an offset by combining a keyword with a value. Here are a couple examples: 
+
+```CSS
+background-position: right center; /* Put the image at the right and vertical center */
+background-position: right 10px center; /* offsets the image 10px from the right */
+background-position: right center 20px; /* Offsets the image 20px from the vertical center */
+```
+
 ## Challenges
 
-Add some background images to your Zen Garden page. 
+Using the Zen Garden page try the following challenges. You will submit your solution styles to Gradescope. 
+
+You can download a fresh copy of the Zen Garden HTML, again you are not allowed to change the markup! 
+
+1. Add a background image to the page that uses a repeating pattern. 
+2. Add an avatar image to the upper left of the page. 
+There should only be one image here and it should be sized to display reasonably. 
+3. Style the example HTML and CSS file links as buttons. Add an icon to the right 
+side of the button. The icon should not overlap the text and should not repeat. 
+It should also be reasonably sized. 
+4. Style the links in the footer to display like "buttons". You should hide the 
+text, and display an icon in the center. The background image should not repeat. 
+The icons should be reasonably sized. 
 
 ## After Class
 
