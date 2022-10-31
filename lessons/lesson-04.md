@@ -283,6 +283,14 @@ It should also be reasonably sized.
 text, and display an icon in the center. The background image should not repeat. 
 The icons should be reasonably sized. 
 
+Submit your work to GradeScope!
+
+Here are some pictures. 
+
+![challenge image 1](images/module-4-challenge-1.png)
+
+![challenge image 2](images/module-4-challenge-2.png)
+
 ## After Class
 
 Continue working on your CSS Zen Garden Page. Use the concepts from class to solve these problems: 
@@ -294,14 +302,6 @@ Continue working on your CSS Zen Garden Page. Use the concepts from class to sol
 - Use a Gradient
 	- Use a gradient to fill the background of the page. 
 	- Use a gradient as a background to a heading or section
-
-Submit your work to GradeScope!
-
-Here are some pictures. 
-
-![challenge image 1](images/module-4-challenge-1.png)
-
-![challenge image 2](images/module-4-challenge-2.png)
 
 ## Resources 
 
