@@ -254,13 +254,14 @@ Using the Zen Garden page try the following challenges. You will submit your sol
 
 You can download a fresh copy of the Zen Garden HTML, again you are not allowed to change the markup! 
 
-1. Add a background image to the page that uses a repeating pattern. 
-2. Add an avatar image to the upper left of the page. 
+1. Add a gradient to the background of the page. 
+2. Add a background image to the page that uses a repeating pattern. 
+3. Add an avatar image to the upper left of the page. 
 There should only be one image here and it should be sized to display reasonably. 
-3. Style the example HTML and CSS file links as buttons. Add an icon to the right 
+4. Style the example HTML and CSS file links as buttons. Add an icon to the right 
 side of the button. The icon should not overlap the text and should not repeat. 
 It should also be reasonably sized. 
-4. Style the links in the footer to display like "buttons". You should hide the 
+5. Style the links in the footer to display like "buttons". You should hide the 
 text, and display an icon in the center. The background image should not repeat. 
 The icons should be reasonably sized. 
 
@@ -277,6 +278,12 @@ Continue working on your CSS Zen Garden Page. Use the concepts from class to sol
 	- Use a gradient as a background to a heading or section
 
 Submit your work to GradeScope!
+
+Here are some pictures. 
+
+![challenge image 1](images/module-4-challenge-1.png)
+
+![challenge image 2](images/module-4-challenge-2.png)
 
 ## Resources 
 
