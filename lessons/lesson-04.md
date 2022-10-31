@@ -289,6 +289,8 @@ Here are some pictures.
 
 ![challenge image 1](images/module-4-challenge-1.png)
 
+This is footer. Notice the text is hidden and each link displays an image. 
+
 ![challenge image 2](images/module-4-challenge-2.png)
 
 ## After Class
