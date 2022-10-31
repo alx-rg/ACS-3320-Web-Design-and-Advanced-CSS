@@ -209,7 +209,25 @@ Add a background image. Use no-repeat, and position center bottom. Add some padd
 }
 ```
 
-Use the multiple images to add an image along the top edge also. See the notes below on adding multiple images. 
+**Multiple background images**
+
+To add more that one image you'll list the images each seprated by a comma. For example: 
+
+```CSS
+background-image: <image 1>, <image 2>, <image 3>;
+```
+
+Important! The first image is on top! The images are stacked top (first) to bottom (last.)
+
+Other image properties, for example, repeat, size, position etc. can also be listed seprated by commas and are applied to the image at the same index. 
+
+```CSS
+background-position: <image 1>, <image 2>, <image 3>;
+background-size: <image 1>, <image 2>, <image 3>;
+background-repeat: <image 1>, <image 2>, <image 3>;
+```
+
+You can use mulitple images to places a gradient under a repeating pattern or other transparent image. You could place multiple icons in different locations. There are many possibilities. 
 
 **Place an image to the left and/or right of a heading**
 
