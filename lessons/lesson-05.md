@@ -1,6 +1,6 @@
 # FEW 2.2 Lesson 5 - CSS Grid
 
-## Review 
+<!-- ## Review 
 
 Imagine this is an interview question. 
 
@@ -33,13 +33,14 @@ You'll need to do the following:
 	- background-image
 	- background-size
 	- background-position
-	- background-repeat
+	- background-repeat -->
 
 ## Learning Objectives 
 
 - Use CSS Grid
 - Define grid with columns and rows
 - Map elements to grid cells
+- Use media queries
 
 ## Video Lessons
 
@@ -49,7 +50,7 @@ Watch videos: lesson 05 1-5
 
 ## What is a Grid? 
 
-In design, a grid is used to create a system that arranges things on a page.
+In design, a grid is used to create a system that arranges things on a page. Think of this as visually organizing your content. 
 
 The first thing that comes to mind when you talk about a grid is graph paper. A grid in design looks a little different. A vertical grid is the space between each line and is based on the font size. Horizontally the grid is based on the column width. 
 
@@ -58,13 +59,6 @@ Here is a good article describing grid systems:
 https://www.oozlemedia.com/advantages-of-grid-systems-in-web-design/
 
 ## CSS Grid 
-
-In the past, the developer community provided CSS frameworks that had grids built-in. You have probably used one of these. 
-
-- https://getbootstrap.com/docs/4.0/layout/grid/
-- https://material-ui.com/components/grid/
-
-These systems were built before CSS supported a built-in grid system. The CSS grid now makes these grid systems obsolete (in my opinion, I'm sure there is an argument to keep them.)
 
 - Q: What does the CSS grid do? 
 - A: CSS Grid arranges elements in rows and columns.
@@ -80,9 +74,9 @@ These systems were built before CSS supported a built-in grid system. The CSS gr
 
 ### Using CSS Grid
 
-CSS Grid works similar to Flex, when you set an element's display property to `grid` all of the element's children will be arranged in a grid. 
+CSS Grid works similar to Flex, you set an element's display property to `grid` and all of the element's _children_ will be arranged in a grid. 
 
-Grid is also different from Flex. It's got two axes and allows you to define cells that make up the grid. It's more complex than Flex. 
+Grid is also different from Flex. A grid has two axes and allows you to define cells that make up the grid. It's more complex than Flex. 
 
 Vocabulary
 
@@ -108,11 +102,11 @@ When you put them together you get a **grid**,
 
 **Grid Cell**
 
-A grid cell is a rectangular area that maps across any number of rows and columns. It has to be a rectangle! The edges must stop at the borders defined by the rows and columns. Notice that a cell doesn't fall into the gap between rows and columns! 
+A grid cell is a rectangular area that maps across any number of rows and columns. It has to be a rectangle! The edges must stop at the borders defined by the rows and columns. 
 
 ![Cells](./images/04-cells.png)
 
-Generally speaking, you can ignore the height of rows since the row height will be set by the height of the content, though sometimes you will set this. 
+Generally speaking, _you can ignore the height of rows since the row height will be set by the height of the content_, though sometimes you will set this.
 
 ### Making a Grid with CSS
 
@@ -137,7 +131,7 @@ With this arrangement, you can use `div.container` to arrange all of the `div.bo
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 1em;
+	gap: 1em;
 }
 ```
 
@@ -160,11 +154,19 @@ Let's take that apart.
 }
 ```
 
-The `fr` is a unit that is one fraction. A fractional unit takes up a fraction of the available space. In this each we have three fractions they should each be 1/3 or 33.333% of the space. 
+
+```CSS
+.container {
+	...
+	gap: 1em; /* adds 1em space between columns and rows */
+}
+```
+
+The `fr` is a unit that represents a fraction. A fractional unit takes up a fraction of the available space. In this each we have three fractions they should each be 1/3 or 33.333% of the space. 
 
 If you had `1fr 1fr 1fr 1fr` each fraction would be 1/4 or 25%. 
 
-You can mix and match fractions for example: `1fr 1fr 2fr` is a total of 4 fractions and would give us: 1/4, 1/4, and 1/2 or 25%, 25%, and 50%.
+Fraction can be any number. For example: `1fr 1fr 2fr` is a total of 4 fractions and would give us: 1/4, 1/4, and 1/2 or 25%, 25%, and 50%.
 
 The code above is all you need for a simple grid where each cell is the same size. 
 
@@ -189,12 +191,12 @@ These elements represent the areas of the page and will be mapped to the grid.
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 1em;
+	gap: 1em;
 	grid-template-areas: 
-	"h h h h" 
-	"s m m m" 
-	"s m m m"
-	"f f f f";
+		"h h h h" 
+		"s m m m" 
+		"s m m m"
+		"f f f f"; /* Note the ; here! */
 ```
 
 This time we have 4 columns each one fraction. 
@@ -250,21 +252,62 @@ Explore some more features of CSS Grid here:
 
 - https://cssgridgarden.com
 
-## After Class
+## Challenge
 
-Solve these puzzles and post your answers to Gradescope.
+Using the CSS Zen Garden HTML try to recreat the following grid arrangement. 
 
-- https://cssgridgarden.com
 
-Apply CSS grid to your Zen Garden page. You can use Grid anywhere you like as long as you have it incorporated somewhere. Here are a few ideas: 
 
-- Use Grid to arrange the page
-- Use Grid to arrange just a section
-	- `footer` - There are four links here. 
-	- `div.design-selection` - The list of links for designs and designers might look good in a grid?
-	- `div.main` - has four subsection these might be interesting in a grid.
-	- `div.zen-resources` - This section has a list with 5 items, it could be a candidate for a grid.
-	- At the bottom of the page there are some extra divs. These were put there for creative purposes you could you arrange these in a grid and give each a background image?
+**Step 1**
+
+The goal of step 1 is to arrange the main elements of the page into header, main and sidebar. 
+
+![Grid 1](images/grid-1.png)
+
+Declare `.page-wrapper` as `display: grid`. All of the children of page-wrapper can now be arrrnaged on a a grid. Identify the children. 
+
+Declare three columns each `1fr` with `grid-template-columns: 1fr 1fr 1fr`. 
+
+Now map the children to grid cells shown with the colors with `grid-template-areas`. Something like this:
+
+```CSS
+grid-template-areas:
+	"h h h"
+	"m m s"
+	"m M s";
+```
+
+Last, map each child elements to the grid areas defined above. 
+
+- `.main` to `grid-area: m`
+- `.intro` to `grid-area: h`
+- `.sidebar` to `grid-area: s`
+
+**Step 2**
+
+The goal is arrange the paragraphs in the `.preamble` section in three equal columns. 
+
+![Grid 2](images/grid-2.png)
+
+Take a look at preamble. This div has four children. You want the header at the top and the three paragraphs in columns below. 
+
+- Declare `.preamble` `display: grid`. 
+- Define three fractional columns with `grid-template-columns`
+- You can use `grid-template-areas` again. The same as above. It might be good to use different letters here to be clear. 
+- Formulate selectors for each of the four children of `.preamble` and assign each to a grid area. 
+
+**Step 2**
+
+The goal for this step is to arrange the two paragraphs here into two equal columns and have the heading span both columns. 
+
+![grid 3](images/grid-3.png)
+
+To do this: 
+
+- Declare `.explanation` display grid. 
+- Define template columns with two fractions
+- Define template areas with two columns and two rows. 
+- Map the elements to their grid areas. 
 
 ## Resources 
 
