@@ -296,7 +296,7 @@ Take a look at preamble. This div has four children. You want the header at the 
 - You can use `grid-template-areas` again. The same as above. It might be good to use different letters here to be clear. 
 - Formulate selectors for each of the four children of `.preamble` and assign each to a grid area. 
 
-**Step 2**
+**Step 3**
 
 The goal for this step is to arrange the two paragraphs here into two equal columns and have the heading span both columns. 
 
