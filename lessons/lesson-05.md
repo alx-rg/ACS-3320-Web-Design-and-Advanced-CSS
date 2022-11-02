@@ -309,6 +309,38 @@ To do this:
 - Define template areas with two columns and two rows. 
 - Map the elements to their grid areas. 
 
+**Stretch goal**
+
+Use media queries to change the arrangement of the grid. 
+
+Currently your page-wrapper grid is: 
+
+```CSS
+"h h h"
+"m m s"
+"m m s"
+```
+
+This works well when the page is wider but when the page gets narrow this doesn't leave enough room for the sidebar. 
+
+When the page is smaller than 800px move the grid to the bottom of the page. You can use this media query to define rules that apply in that situation. 
+
+```CSS
+@media screen and (max-width: 800px) {
+
+}
+```
+
+In the media query redefine the grid-template-areas to something like this:
+
+```CSS
+"h h h"
+"m m m"
+"s s s";
+```
+
+Notice the sidebar has been moved to the bottom! 
+
 ## Resources 
 
 - [Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
