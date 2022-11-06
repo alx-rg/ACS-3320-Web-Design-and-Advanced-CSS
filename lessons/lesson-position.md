@@ -102,6 +102,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 <body>
 
 	<style>
+		/* These styles just apply to the page to arrange the boxes in the center */
 		body, html { height: 100%; }
 		body {
 			display: flex;
@@ -117,9 +118,8 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 
 	<div class="page-wrapper">
 		
-
+	<!-- ------------------------------------------------------- -->
 	<!-- Challenge 1 draw a dash put the inner div in the center -->
-
 	<div class="challenge-1">
 		<div></div>
 	</div>
@@ -134,12 +134,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		}
 
 	</style>
-
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 2 draw an = with two divs -->
 
@@ -161,11 +156,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		
 	}
 </style>
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 3 draw an X with two divs -->
 
@@ -191,11 +182,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		
 	}
 </style>
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
  <!-- Challenge 4 draw a circle with an X  -->
 
@@ -226,13 +213,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		
 	}
 </style>
-
-
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 5 draw a check mark -->
 
@@ -249,12 +230,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		
 	}
 </style>
-
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 6 draw a hamburger -->
 <!-- Stretch Challenge: Add lettuce, tomato, and cheese -->
@@ -286,10 +262,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 		
 	}
 </style>
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 7 draw the apple switch -->
 
@@ -314,11 +287,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 
 	
 </style>
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 8 Draw a smilley face -->
 
@@ -352,11 +321,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 	}
 	
 </style>
-
-
-
-
-
+<!-- ------------------------------------------------------- -->
 
 <!-- Challenge 9 -->
 
@@ -385,6 +350,7 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 	}
 
 </style>
+<!-- ------------------------------------------------------- -->
 
 
 </div>
@@ -392,3 +358,4 @@ Below is the HTML that I started with. Feel free to work with this or change it 
 </body>
 </html>
 ```
+
