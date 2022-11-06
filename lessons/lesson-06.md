@@ -8,7 +8,7 @@ https://youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
 Watch Lesson 06 1-3
 
-## Review
+<!-- ## Review
 
 Consider this exercise as a practice interview question. There are two parts: an on site question and a take home question. The take home question is at the bottom of this page [here](#after-class). 
 
@@ -60,7 +60,7 @@ Follow these steps:
   
 </body>
 </html>
-``` 
+```  -->
 
 ## Why you should know this?
 
