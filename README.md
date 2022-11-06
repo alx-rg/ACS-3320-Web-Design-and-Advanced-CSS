@@ -49,7 +49,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  5 |  Wed, Nov  2 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
 |  6 |  Mon, Nov  7 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
 |  7 |  Wed, Nov  9 | [Lesson Position] | [Site Redesign] |
-|  8 |  Mon, Nov 14 | [Lesson 8 Styling Navbars] | [Your framework Navbars] |
+|  8 |  Mon, Nov 14 | [Lesson 8 Styling Navbars] | - |
 |  9 |  Wed, Nov 16 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Mon, Nov 21 | [Lesson 10 Animation] | Animation |
 | 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
