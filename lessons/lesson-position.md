@@ -52,6 +52,29 @@ By default the positioning context is body element. This means the left edge is 
 
 An absolutely positioned element looks up the DOM chain. The first ancestor element it finds that has relative position defines it's positioning context. That elements edges define where 0 is for each of the left, top, right, and bottom properties. 
 
+## Stacking order
+
+When elements are siblings they stack at their index. The first element is in the back and higher elements in front. 
+
+When an element uses position other than `static` you can set the stacking order with `z-index`. Set `z-index` to any value higher numbers are in front of lower numbers. 
+
+## A few notes on borders
+
+The border property allows you to set the border of any element. The border can be set for any or all of the four sides. List the values in order: top, right, bottom, left. 
+
+```CSS
+div {
+	border-style: solid none solid double;
+	border-width: 10px 0 1rem 2mm;
+}
+```
+
+You won't see a border unless you set the `border-style`! 
+
+By default a border has the same color as the `color` of the element. 
+
+If you set one side of a border to a color transparent you'll get a beveled or 45 degree edge. This is sometimes useful! 
+
 ## Read more about CSS position
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning
