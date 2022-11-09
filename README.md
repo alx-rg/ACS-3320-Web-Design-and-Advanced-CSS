@@ -49,7 +49,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  5 |  Wed, Nov  2 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
 |  6 |  Mon, Nov  7 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
 |  7 |  Wed, Nov  9 | [Lesson CSS Position] | [Site Redesign] |
-|  8 |  Mon, Nov 14 | [Lesson 8 Styling Navbars] | - |
+|  8 |  Mon, Nov 14 | [lesson-pseudo-elements] | - |
 |  9 |  Wed, Nov 16 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
 | 10 |  Mon, Nov 21 | [Lesson 10 Animation] | Animation |
 | 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
@@ -74,6 +74,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 13 Web Components 2]: lessons/lesson-16.md
 [Lesson CSS Position]: lessons/lesson-position.md
 [Site Redesign]: assignments/assignment-redesign.md
+[lesson-pseudo-elements]: assignments/lesson-pseudo-elements.md
 
 [Lesson 12]: lessons/lesson-12.md
 [Lesson 13]: lessons/lesson-13.md
