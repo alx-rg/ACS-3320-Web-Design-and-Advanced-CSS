@@ -74,7 +74,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 13 Web Components 2]: lessons/lesson-16.md
 [Lesson CSS Position]: lessons/lesson-position.md
 [Site Redesign]: assignments/assignment-redesign.md
-[lesson-pseudo-elements]: assignments/lesson-pseudo-elements.md
+[lesson-pseudo-elements]: lessons/lesson-pseudo-elements.md
 
 [Lesson 12]: lessons/lesson-12.md
 [Lesson 13]: lessons/lesson-13.md
