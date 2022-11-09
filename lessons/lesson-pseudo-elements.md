@@ -400,6 +400,8 @@ Borrow ideas from these articles:
 			
 			<input type="radio" id="nike" name="choice">
 			<label class="radio" for="nike">Nike</label>
+			
+			<p><button>Submit</button></p>
 		</form>
 
 	</body>
