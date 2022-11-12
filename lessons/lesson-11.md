@@ -21,6 +21,10 @@ In animation the concept of key frames is the idea of drawing the extremes of a 
 
 ![Key frames](images/keyframes-1.png)
 
+Most often you are animating numeric values and these numbers represent your key frames. 
+
+![Key frames](images/keyframes-2.png)
+
 ## @Keyframes and animation
 
 Use these properties to create longer more complex animations that can be looped and repeated. 
