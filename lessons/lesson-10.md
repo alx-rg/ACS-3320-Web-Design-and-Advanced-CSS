@@ -63,10 +63,10 @@ In a nutshell animation is the changing of property values over time.
 
 In a nutshell `transition` causes changes to CSS properties to change over time instead of changing instantly, `@keyframe` defines changes that are mapped out over time. Transition animates a change to a property, keyframes map out changes that are then applied to properties. 
 
-### Transition
+## Transition
 
 ```CSS
-.a {
+.box {
   width: 100px;
   height: 100px;
   background-color: #f00;
@@ -75,7 +75,7 @@ In a nutshell `transition` causes changes to CSS properties to change over time 
   /* s = secs ms = milliseconds */
 }
 
-.a:hover {
+.box:hover {
   /* These changes occur over the transition time set above */
   transform: scale(1.25) rotate(12deg);
 }
@@ -83,55 +83,24 @@ In a nutshell `transition` causes changes to CSS properties to change over time 
 
 The base rule declares a transition of 400 milliseconds. The hover rule changes the scale and rotation. Rather than happening immediately, the change takes 400 milliseconds.
 
+With `transistion` you set the time it should take properties to change. When a rule changes the value of properties this properties change over the set length of the time. 
+
+In this example above, when the hover is in effect scale and rotation change and that change takes 400ms. Whrn the hover effect is removed the values change back to their original values and the transition takes 400ms. 
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
 
-### Keyframes
+The `transition` property sllows you to set the which properties are transitioned and the time for each. If you don't include this information the time applies to all properties. 
 
-To create keyframe animations define some keyframes. A keyframe describes the values for CSS properties at a point in time. 
+### Ttransition properties
 
-Assign keyframe animation a name, `scaleAndRotate` in the example below. 
+- transition-delay - wait before transition begins
+- transition-duration - length of transition
+- transition-property - which properties to animate
+- transition-timing-function - mathematical function applied to the motion
 
-Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
-```CSS
-@keyframes scaleAndRotate {
-  0% { transform: scale(0.5) rotate(0); }
-  50% { background-color: blue; }
-  100% { transform: scale(1.0) rotate(23deg); }
-}
-```
+### What can you animate?
 
-The code above defines the animation. Below the animation is applied to an element. 
-
-The `animation` property applies an animation to an element. The line: `animation: scaleAndRotate 5s infinite` sets the animation to `scaleAndRotate` (matches the name above), sets the length of the animation 5 secs (`5s`), and repeat infinitely (`infinite`).
-
-```CSS
-div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position :relative;
-  /* name duration iteration-count */
-  animation: scaleAndRotate 5s infinite;
-}
-```
-
-The animation property is the shorthand property for: 
-
-- `animation-delay`
-- `animation-duration`
-- `animation-fill-mode`
-- `animation-iteration-count`
-- `animation-name`
-- `animation-play-state`
-- `animation-timing-function`
-
-The code above could be broken into three lines: 
-
-```CSS
-animation-name: scaleAndRotate;
-animation-duration: 5s;
-animation-iteration-count: infinite;
-```
+Just about anything. Any property that has a numeric value is a good candisate. Properties that have values like "flex", "grid", "helvetica" don't animate well since they can only step from one value to another with no inbetween state. 
 
 ## Easing - Timing Function
 
@@ -140,6 +109,59 @@ Easing describes the change in the rate of motion. When things speed up, think o
 Everything in the real world eases in or eases out. You should always apply easing! This will give your motion character and make it more realistic and interesting to watch. 
 
 Play around with: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+
+You should always apply easing to your animations it will make them more interesting and fun. 
+
+There are a couple exceptions. Animating color and transparency changes look smoother with linear easing. Animations where it's expected that something moves at a constant rate, like clouds or a plane in the sky, linear easing is best. 
+
+## Challenges
+
+Try and recreate at least four of the examples here: 
+
+lesson-02-example.html
+
+Try not to look at the source code! You can peak if you get stuck! Feel free to modify the example to suit your preference. 
+
+## Combine transistion with ::before and ::after
+
+You can apply animation to pseudo elements! Keep in mind to animate some properties your pseudo element will have to be `display: block` or `display: inline-block`, and you will only be able to create two pseudo elements, one with `::before` and the other with `::after`. 
+
+### Fancy Underline
+
+The goal here is to make a line that draws itself under a word. To do this we need another new element to appear. This would be a difficult addiction to existing markup and as a visual effect should not part of that markup, remember the separation of concerns. 
+
+The solution is to generate the extra element with ::after. 
+
+```HTML
+<style>
+	.add-box {
+		display: inline-block;
+		color: tomato;
+	}
+	.add-box::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 3px;
+		background-color: tomato;
+		transition: 400ms;
+	}
+	.add-box:hover::after {
+		width: 100%;
+	}
+</style>
+
+<blockquote>
+	If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
+</blockquote>
+-James Cameron
+```
+
+![fancy hover](images/hover-effecft.gif)
+
+Here the class `.add-box` adds a new pseudo-element with `::after`. That element is styled with a `display: block`, `width`, `height`, and `background-color`. It also has a `transition`, so changes to these properties will be animated. 
+
+Notice the last rule: `.add-box:hover::after`. This selector applies to the `::after` element when its parent is in the `:hover` state. Changing the width here starts the animation. 
 
 ## Making things move with CSS
 
@@ -162,11 +184,7 @@ Recreate the animations here using CSS transitions.
 
 - [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
 
-Add some motion to your CSS drawing/logo:
-
-- [Animate your Drawing](../Assignments/assignment-04-Animate-Logo.md)
-
-It's easiest to use `transition` for interactive animations on hover or click and `@keyframes` for cycling animations or complex animations. See the link below for a detailed description of the homework:
+Add some animation to the project you are redesigning. 
 
 ## Additional Resources
 

@@ -1,143 +1,74 @@
-# FEW 2.2 - Advanced CSS - ::before and ::after
+# FEW 2.2 - Animation part 2
 
 Add custom controls with pseudo-elements. 
 
 ## Why you should know this?
 
-The default check box and radio button offer very few options for customization. Using pseudo-elements opens up a lot of options. 
+
 
 ## Learning Objectives
 
-1. Describe the relationship between an input and its label
-1. Define a label and input that are associated 
-1. Use pseudo-classes ::before and ::after
-1. Create custom checkboxes and radio buttons
-1. Use ridiculously complicated CSS selectors
 
-## Slides
 
-https://docs.google.com/presentation/d/1bVVX2ELbGEPktG6Cv_DiA2I4uxYyEGALr7WUAga0RLw/edit?usp=sharing
 
-## Pseudo Elements
+## @Keyframes and animation
 
-`::before` and `::after` are pseudo-classes. These create new elements via CSS that don't exist in the DOM. 
+Use these properties to create longer more complex animations that can be looped and repeated. 
 
-Imagine you have: 
+To create keyframe animations define some keyframes. A keyframe describes the values for CSS properties at a point in time. 
 
-`<div> * </div>`
+Assign keyframe animation a name, `scaleAndRotate` in the example below. 
 
-With this style:
+Define the value for properties along the length of the animation. Here `transform: scale(0.5) rotate(0)` happens at the beginning `0%`, `background-color: blue` happens at the half way point `50%`, and `transform: scale(1.0) rotate(23deg)` happens at the end of the animation `100%`.
+```CSS
+@keyframes scaleAndRotate {
+  0% { transform: scale(0.5) rotate(0); }
+  50% { background-color: blue; }
+  100% { transform: scale(1.0) rotate(23deg); }
+}
+```
+
+The code above defines the animation. Below the animation is applied to an element. 
+
+The `animation` property applies an animation to an element. The line: `animation: scaleAndRotate 5s infinite` sets the animation to `scaleAndRotate` (matches the name above), sets the length of the animation 5 secs (`5s`), and repeat infinitely (`infinite`).
 
 ```CSS
-div::before {
-	content: "Hello";
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position :relative;
+  /* name duration iteration-count */
+  animation: scaleAndRotate 5s infinite;
 }
-
-div::after {
-	content: "World";
-}
 ```
 
-Your div would appear as: 
+The animation property is the shorthand property for: 
 
-`Hello * World`
+- `animation-delay`
+- `animation-duration`
+- `animation-fill-mode`
+- `animation-iteration-count`
+- `animation-name`
+- `animation-play-state`
+- `animation-timing-function`
 
-The before element goes before the existing content and the after element goes after. 
+The code above could be broken into three lines: 
 
-You can think of DOM like this: 
-
-```HTML
-<div>
-	<span>Hello</span>
-	*
-	<span>World</span>
-</div>
+```CSS
+animation-name: scaleAndRotate;
+animation-duration: 5s;
+animation-iteration-count: infinite;
 ```
 
-Though the inspector will show: 
 
-```HTML
-<div>
-	::before
-	*
-	::after
-</div>
-```
 
-## What can you do with pseudo-elements?
 
-Using ::before and ::after you can add elements to the DOM that don't exist in your mark up, and you can style these new elements. 
 
-### Fancy Blockquote
 
-Making fancy blockquote styles is a possible application. Imagine you want to add a fancy quotation mark before and after the text in a blockquote. 
 
-```HTML
-<style>
-	blockquote::before {
-		content: open-quote;
-		font-size: 3em;
-		color: tomato;
-	}
-	blockquote::after {
-		content: close-quote;
-		font-size: 3em;
-		color: tomato;
-	}
-	blockquote {
-		/* Set the quote style */
-		quotes: "\201C""\201D""\2018""\2019";
-	}
-</style>
 
-<blockquote>
-	The way to get started is to quit talking and begin doing. 
-</blockquote>
--Walt Disney
-```
 
-![block quote](images/fancy-quotes.png)
-
-Here the ::defore and ::after elements have content that is an open and closing quote. They also have styles that set the `font-size` and color of their elements. 
-
-https://css-tricks.com/almanac/properties/q/quotes/
-
-### Fancy Underline
-
-The goal here is to make a line that draws itself under a word. To do this we need another new element to appear. This would be a difficult addiction to existing markup and as a visual effect should not part of that markup, remember the separation of concerns. 
-
-The solution is to generate the extra element with ::after. 
-
-```HTML
-<style>
-	.add-box {
-		display: inline-block;
-		color: tomato;
-	}
-	.add-box::after {
-		content: "";
-		display: block;
-		width: 0;
-		height: 3px;
-		background-color: tomato;
-		transition: 400ms;
-	}
-	.add-box:hover::after {
-		width: 100%;
-	}
-</style>
-
-<blockquote>
-	If you set your goals <span class="add-box">ridiculously</span> high and it's a failure, you will fail above everyone else's <span class="add-box">success</span>. 
-</blockquote>
--James Cameron
-```
-
-![fancy hover](images/hover-effecft.gif)
-
-Here the class .add-box adds a new pseudo-element with ::after. That element is styled with a display: block, width, height, and background color. It also has a transition, so changes to these properties will be animated. 
-
-Notice the last rule: .add-box:hover::after. This selector applies to the ::after element when its parent is in the :hover state. Changing the width here starts the animation. 
 
 ## Research Pseudo-elements
 

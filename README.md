@@ -47,11 +47,11 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  3 |  Wed, Oct 26 | [Lesson 3 Box Model Flex] [Media Queries] | [CSS Zen Garden Card and Button] |
 |  4 |  Mon, Oct 31 | [Lesson 4 Background Images] | [CSS Zen Garden Background Images] |
 |  5 |  Wed, Nov  2 | [Lesson 5 CSS Grid]          | [CSS Zen Garden Grid] |
-|  6 |  Mon, Nov  7 | [Lesson 6 CSS Frameworks]    | [CSS Zen Garden + CSS Framework] |
-|  7 |  Wed, Nov  9 | [Lesson CSS Position] | [Site Redesign] |
-|  8 |  Mon, Nov 14 | [lesson-pseudo-elements] | - |
-|  9 |  Wed, Nov 16 | [Lesson 9 Form Controls] | [Your framework Form Controls] |
-| 10 |  Mon, Nov 21 | [Lesson 10 Animation] | Animation |
+|  6 |  Mon, Nov  7 | [Lesson CSS Position] | Challenge problems [Site Redesign] |
+|  7 |  Wed, Nov  9 | [lesson-pseudo-elements] |  |
+|  8 |  Mon, Nov 14 | [Lesson 10 Animation] | Challenge Problems |
+|  9 |  Wed, Nov 16 | [Lesson 10 Animation] |  |
+| 10 |  Mon, Nov 21 |  |  |
 | 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
 | 12 |  Mon, Nov 28 | [Lesson 11 CSS Preprocessors] | - |
 | 13 |  Wed, Nov 30 | [Lesson 12 Web Components 1] | - |
