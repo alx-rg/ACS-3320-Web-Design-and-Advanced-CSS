@@ -1,15 +1,25 @@
 # FEW 2.2 - Animation part 2
 
-Add custom controls with pseudo-elements. 
+Use @keyframes to create more complex animations.  
 
 ## Why you should know this?
 
-
+All of the best applications use motion to their advantage! You want your applications and the applications you are building to stand out!
 
 ## Learning Objectives
 
+- Describing key framing
+- Describe in betweening
+- Use `@keyframes` define key frames
+- Use `animation` to make things move
 
+## key frames
 
+Animation is the creation of many still images that are played back quickly giving the appearance of smooth motion. 
+
+In animation the concept of key frames is the idea of drawing the extremes of a motion. For example a ball bouncing the extremes would the ball at the highest point and the ball at the highest point. 
+
+![Key frames](images/keyframes-1.png)
 
 ## @Keyframes and animation
 
