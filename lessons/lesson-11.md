@@ -25,7 +25,52 @@ Most often you are animating numeric values and these numbers represent your key
 
 ![Key frames](images/keyframes-2.png)
 
-## @Keyframes and animation
+You could define these key frames with `@keyframe` in CSS like this: 
+
+```CSS
+@keyframes bounce {
+	0% { top: 0; }
+	100% { top: 200px; }
+}
+```
+
+The extremes of the animation are 0 and 200px. The values between these numbers are the in betweens. 
+
+Inbetweens are the frames that need to be generated between the key frames! 
+
+This applies to every property that needs to be animated. 
+
+Notice that you have placed keyframes along the length of the animation using %. The time has not been set yet but the first key frame applies at 0% of the length of the animation and the last key frame applies at the end or 100% the length of the animation! 
+
+To apply this key frame to an object use the animation properties: 
+
+```CSS
+.ball {
+  animation-name: bounce; /* Set the key frames */
+  animation-duration: 2s; /* Set the duration  */
+  animation-iteration-count: infinite; /* Set the repeats */
+  animation-direction: alternate; /* Set the direction */
+  animation-timing-function: ease-out;
+}
+```
+
+Animation has more than a few properties. Try and remember the concepts, look up the property names if you forget them. 
+
+The process of using animation: 
+
+- Define some key frames with `@keyframes`
+- Assign your keyframes to an object with `animation-name`
+- Set the duration of the animation with `animation-duration`
+- set the number of times the animation should repeat with `animation-iteration-count`
+
+From there you might use other properties to modify the animation you created. 
+
+- Use `animation-direction` to play the animation forward, backward, alternate (back and forth)
+- Use `animation-timing-function` to change the "quality" of the motion. This chnages the math function that generates the inbetween values. 
+- Use `animation-delay` to create a pause before the animation starts. 
+- Use `animation-fill-mode` to determine what happens before and after the animation. Often you'll use this to make an object stop at the end point of the animation instead of snapping back to it's starting value.
+
+## @Keyframes and animation example
 
 Use these properties to create longer more complex animations that can be looped and repeated. 
 
@@ -75,156 +120,19 @@ animation-duration: 5s;
 animation-iteration-count: infinite;
 ```
 
+## Challenges
 
+The challenge for today is open ended. You will design your own loading animation. This can be anything you like. Take a look at the examples. 
 
-
-
-
-
-
-
-
-## Research Pseudo-elements
-
-Read this article. It talks about the uses for ::before and ::after. 
-
-https://css-tricks.com/pseudo-element-roundup/
-
-## Custom Checkboxes and radio buttons
-
-The checkbox and radio button are limited in what the browser allows you to style. With Pseudo-elements we open up the possibility to customize these elements. 
-
-### How are checkboxes and radio buttons marked up?
-
-Usually you will want to markup up checkboxes and radio buttons like this: 
-
-```HTML
-<label>
-	<input type="checkbox">
-	Pickles?
-</label>
-
-<label>
-	<input type="radio" name="choice" checked>
-	Converse
-</label>
-
-<label>
-	<input type="radio" name="choice">
-	Vans
-</label>
-```
-
-The label is an important element here. Besides providing a label that can be read, the label provides an element that can be interacted with. 
-
-**With the label wrapped around the input clicking the label is the same as clicking the input.**
-
-What are the elements needed for a checkbox or radio button? 
-
-![checkbox radio](images/checkbox-radio.png)
-
-The checkbox or radio button is usually made of two parts a container, a box or circle, and a mark, check, or dot. The mark is sometimes visible and sometimes not. 
-
-This can also be more complicated than what is presented here but these are the basic elements or starting place to create checkboxes and radio buttons. 
-
-To make this possible we need to add a little more markup. The markup presented above doesn't allow us enough to control the checkbox with CSS alone. By adding one extra tag we can do that. 
-
-```HTML
-<label>
-	<input type="checkbox">
-	<span>Pickles?</span>
-</label>
-
-<label>
-	<input type="radio" name="choice">
-	<span>Converse</span>
-</label>
-
-<label>
-	<input type="radio" name="choice">
-	<span>Vans</span>
-</label>
-```
-
-With the extra span, you can use the + or ~ selectors to connect the span with the input. More on this below. 
-
-Since we are going to include this in our frameworks it's probably best to make it something that is opt-in. Do this by adding a class name: 
-
-```HTML
-<label class="frmwrk-checkbox">
-	...
-</label>
-
-<label class="frmwrk-radio">
-	...
-</label>
-
-<label class="frmwrk-radio">
-	...
-</label>
-```
-
-By including the class frmwork-checkbox or frmwrk-radio you'll get the fancy checkboxes and radio buttons. Without these classes, you get the standard checkbox and radio buttons. 
-
-You'll need 5 selectors. Here they without their inner styles. Each of these performs a different function. Read the comments below. 
-
-```CSS
-/* checkbox button base element */
-.frmwrk-checkbox > span {
-	...
-}
-/* Selected "checkmark" styles */
-.frmwrk-checkbox > input[type=checkbox] + span::before {
-	... 
-}
-/* Selected "mark" styles */
-.frmwrk-checkbox > input[type=checkbox]:checked + span::before {
-	...
-}
-/* Outline */
-.frmwrk-checkbox > input[type=checkbox] + span::after {
-	...
-}
-/* Hide the input */
-.frmwrk-checkbox input {
-	...
-}
-```
-
-- base element - sets the style of the label and its children
-	- .frmwrk-checkbox > span
-- Selected "checkmark" - Sets the style for the pseudo-element that appears in the box or circle. The selector here selects the ::before an element of the span that immediately follows the input with type=checkbox
-	- .frmwrk-checkbox > input[type=checkbox] + span::before
-	- https://www.w3schools.com/cssref/sel_element_pluss.asp
-- Selected "mark" - Sets the style for the checkmark when the mark is visible or selected. The selector here says: select the ::before the pseudo-element that belongs to the span that immediately follows an input with type=checkbox. 
-	- .frmwrk-checkbox > input[type=checkbox]:checked + span::before
-	- https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
-- Outline - Styles the box or circle that contains the mark. The selector here says to select an input that has type=checkbox that is a child of an element with class frmwrk-checkbox. 
-	- .frmwrk-checkbox > input[type=checkbox] + span::after
-	- https://www.w3schools.com/css/css_attribute_selectors.asp
-
-With these selectors, you're ready to make some custom checkboxes or radio buttons. 
-
-You can see the full source code for the examples above here: 
-
-- Fancy Blockquote - [lesson-08-fancy-blockquote.html](lesson-08-fancy-blockquote.html)
-- Fancy Underline - [lesson-08-fancy-underline.html](lesson-08-fancy-underline.html)
-- Custom Checkboxes and Radio Buttons - [lesson-08-custom-checkboxes-radio-buttons.html](lesson-08-custom-checkboxes-radio-buttons.html)
-
-There are many articles here are a few that I picked out. You can follow these to help guide or inspire and provide direction. 
-
-- https://www.appitventures.com/blog/styling-checkbox-css-tips
-- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-- https://codepen.io/Vestride/pen/dABHx
 
 
 ## Activity 
 
-Create your custom checkboxes and radio buttons. Add these to your CSS framework. 
+ 
 
 ## After Class 
 
-Use the ideas above and add styles for "fancy" block quotes to your CSS framework.
+
 
 ## Additional Resources
 

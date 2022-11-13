@@ -50,7 +50,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  6 |  Mon, Nov  7 | [Lesson CSS Position] | Challenge problems [Site Redesign] |
 |  7 |  Wed, Nov  9 | [lesson-pseudo-elements] |  |
 |  8 |  Mon, Nov 14 | [Lesson 10 Animation] | Challenge Problems |
-|  9 |  Wed, Nov 16 | [Lesson 10 Animation] |  |
+|  9 |  Wed, Nov 16 | [Lesson 11 Animation] |  |
 | 10 |  Mon, Nov 21 |  |  |
 | 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
 | 12 |  Mon, Nov 28 | [Lesson 11 CSS Preprocessors] | - |
@@ -69,6 +69,8 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 8 Styling Navbars]: lessons/lesson-08.md
 [Lesson 9 Form Controls]: lessons/lesson-09.md
 [Lesson 10 Animation]: lessons/lesson-10.md
+[Lesson 11 Animation]: lessons/lesson-11.md
+
 [Lesson 11 CSS Preprocessors]: lessons/lesson-12.md
 [Lesson 12 Web Components 1]: lessons/lesson-15.md
 [Lesson 13 Web Components 2]: lessons/lesson-16.md

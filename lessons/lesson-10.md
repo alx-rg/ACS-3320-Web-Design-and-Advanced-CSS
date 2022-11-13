@@ -8,9 +8,9 @@ Engagment is important. Things that move are much more interesting. Adding motio
 
 ## Learning Objectives
 
-1. Describe easing
-1. Use CSS transition and keyframes to make things move
-1. Control and define the time and easing for elements that move
+1. Use `transition`
+2. Create interactive animations
+3. Use the `:hover` pseudo class
 
 ## Slides
 
@@ -113,6 +113,47 @@ Play around with: https://developer.mozilla.org/en-US/docs/Web/CSS/animation-tim
 You should always apply easing to your animations it will make them more interesting and fun. 
 
 There are a couple exceptions. Animating color and transparency changes look smoother with linear easing. Animations where it's expected that something moves at a constant rate, like clouds or a plane in the sky, linear easing is best. 
+
+## Using :hover
+
+The `:hover` pseudo class applies when the cursor is over an element. Use it to create animation based on user interaction. You use `:hover` to draw attention to an element that can be interacted with, get a users attention, warn a user that something could happen. 
+
+```CSS
+button {
+  background-color: #fff; 
+}
+
+button:hover {
+  background-color: red;
+}
+```
+
+A simple example. When the curcor is over the element the color changes to red. 
+
+### Using :hover on an ancestor
+
+An important strategy with `:hover` is to use it on an ancestor element. Imagine you want to apply some styles ot an element but only when the cursor is over an ancestor of that element. 
+
+Do this by placing `:hover` on the ancestor element you want to initiate the action and follow the selector with a child or descendant selector. 
+
+Here's an example imagine you want to style the heading in a dialog box. But you want the heading to change when the cursor is over the dialog box. 
+
+```HTML
+<div class="dialog-box">
+  <h1>Delete your account</h1>
+  <p>By clicking okay you will delete your account permanently
+    <button>Delete</button>
+  </p>
+</div>
+
+<style>
+  .dialog:hover h1 {
+    color: red;
+  }
+</style>
+```
+
+This is powerful idea that makes many animations possible with CSS that would not be possible without it! There are several examples in challenge examples for this lesson that use the idea! 
 
 ## Challenges
 
