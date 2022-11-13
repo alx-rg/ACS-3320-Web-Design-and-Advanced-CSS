@@ -159,7 +159,7 @@ This is powerful idea that makes many animations possible with CSS that would no
 
 Try and recreate at least four of the examples here: 
 
-lesson-02-example.html
+https://tech-at-du.github.io/ACS-3320-Web-Design-and-Advanced-CSS/lessons/lesson-02-example.html
 
 Try not to look at the source code! You can peak if you get stuck! Feel free to modify the example to suit your preference. 
 
