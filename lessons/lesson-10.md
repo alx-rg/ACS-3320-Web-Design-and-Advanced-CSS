@@ -155,6 +155,84 @@ Here's an example imagine you want to style the heading in a dialog box. But you
 
 This is powerful idea that makes many animations possible with CSS that would not be possible without it! There are several examples in challenge examples for this lesson that use the idea! 
 
+## CSS variables
+
+Other languages have variables CSS has them also but they work a little bit differently. CSS variables are called custom properties and they act like other CSS properties. 
+
+All custom property names must begin with a double hyphen. You can assign any valid CSS value to a custom property. 
+
+Custom properties have scope and their scope is determined by the selector where were declared. Often you'll want to declare variables in `:root`. This is special selector that represents the root of your document. 
+
+```CSS
+:root {
+  --fg-color: #eee;
+  --bg-color: #333;
+  --font-name: Helvetica;
+  --num-columns: 3;
+  --size: 40px;
+}
+```
+
+These variables would be accessible from anywhere in your CSS document. 
+
+To use a custom property you must use the `var()` function!
+
+```CSS
+body {
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  margin: var(--size);
+  display: grid;
+  grid-template-columns: repeat(var(--num-columns), 1fr);
+}
+```
+
+Notice that everywhere you used a custom property as a value you used the `var(--some-prop)`.
+
+This also works with `calc()`.
+
+```CSS
+.square {
+  --size: 100px;
+  --margin: 1rem;
+  --padding: 0.5rem;
+  width: calc(var(size) - var(--margin) * 2 - var(--padding) * 2);
+}
+```
+
+As you can see this can be a little awkward. 
+
+### Why use custom properties? 
+
+If you haven't been sold on custom properties yet think about searching through you document looking for values that need to be changed. With custom properties you can declare important values at the top in an easy to identify location for quick editing. 
+
+Custom properties keep your code DRY.
+
+Scope allows custom properties to be overriden in ways that can make your code more flexible. 
+
+```HTML
+<style>
+:root {
+  --primary-color: #f6f;
+  --hover-color: #f0f;
+}
+button {
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+</style>
+
+<button>Normal Button</button>
+
+<button style="--primary-color: #9ff; --hover-color: #0ff;">
+  Special Button</button>
+```
+
+Here the first button displays as normal. The second button overrides the `--primary-color` and `--hover-color` properties only in the scope of the second button! Setting the valuse here does not affect teh first button! 
+
 ## Challenges
 
 Try and recreate at least four of the examples here: 
@@ -162,6 +240,8 @@ Try and recreate at least four of the examples here:
 https://tech-at-du.github.io/ACS-3320-Web-Design-and-Advanced-CSS/lessons/lesson-02-example.html
 
 Try not to look at the source code! You can peak if you get stuck! Feel free to modify the example to suit your preference. 
+
+Use custom properties as you work! Try and apply custom properties where you can to your advantage! We will be talking more about custom properties! 
 
 ## Combine transistion with ::before and ::after
 
