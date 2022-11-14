@@ -14,9 +14,9 @@ Engagment is important. Things that move are much more interesting. Adding motio
 4. Define CSS Custom Properties
 5. Use CSS Custom Properties
 
-## Slides
+<!-- ## Slides
 
-https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing
+https://docs.google.com/presentation/d/1SAP_Xz5_25VRa41kBmzncHtekSXodDt2WGRSjcy7FZI/edit?usp=sharing -->
 
 ## Identify some Examples of motion
 
