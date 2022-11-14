@@ -349,7 +349,7 @@ Follow these video tutorials. These videos walk through how to solve all of the 
 
 https://www.youtube.com/watch?v=9UeVeH5ZzP0&list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2N6i
 
-Recreate the animations here using CSS transitions. 
+Recreate (at least 6 of) the animations here using CSS transitions. Use CSS custom properties in your solutions!
 
 - [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
 
