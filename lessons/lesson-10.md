@@ -11,6 +11,8 @@ Engagment is important. Things that move are much more interesting. Adding motio
 1. Use `transition`
 2. Create interactive animations
 3. Use the `:hover` pseudo class
+4. Define CSS Custom Properties
+5. Use CSS Custom Properties
 
 ## Slides
 
@@ -128,7 +130,7 @@ button:hover {
 }
 ```
 
-A simple example. When the curcor is over the element the color changes to red. 
+A simple example. When the curcor is over the element the color changes to red. When cursor moves off the element red is no longer the background color changes back to white. 
 
 ### Using :hover on an ancestor
 
@@ -231,7 +233,53 @@ button:hover {
   Special Button</button>
 ```
 
-Here the first button displays as normal. The second button overrides the `--primary-color` and `--hover-color` properties only in the scope of the second button! Setting the valuse here does not affect teh first button! 
+Here the first button displays as normal. The second button overrides the `--primary-color` and `--hover-color` properties only in the scope of the second button! Setting the valuse here does not affect the first button! 
+
+The example above is very simple but holds a lot of potential! Study it closely!
+
+### Another Button with custom properties example
+
+```HTML
+<style>
+  :root {
+    --color-a: #9424d9;
+  }
+
+  button {
+    --color-fg: #fff;
+    --color-bg: #3083d5;
+
+    color: var(--color-fg);
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: var(--color-bg);
+    border-width: 2px;
+    background-color: var(--color-bg);
+    transition: 200ms;
+  }
+
+  button:hover {
+    color: var(--color-bg);
+    background-color: var(--color-fg);
+  }
+</style>
+
+<div>
+  <button>Hello</button>
+  <button 
+    style="--color-bg: #47a624">World</button>
+  <button 
+    style="--color-fg: #000">Foo</button>
+  <button 
+    style="--color-bg: #c1241c">Delete</button>
+  <button 
+    style="--color-bg: var(--color-a)">Bar</button>
+</div>
+```
+
+Similar to the first example. Notice that the custom properties are used in a few places.
 
 ## Challenges
 
@@ -241,7 +289,7 @@ https://tech-at-du.github.io/ACS-3320-Web-Design-and-Advanced-CSS/lessons/lesson
 
 Try not to look at the source code! You can peak if you get stuck! Feel free to modify the example to suit your preference. 
 
-Use custom properties as you work! Try and apply custom properties where you can to your advantage! We will be talking more about custom properties! 
+Use custom properties as you work! Apply custom properties where you can to your advantage!
 
 ## Combine transistion with ::before and ::after
 
