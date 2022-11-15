@@ -351,7 +351,7 @@ https://www.youtube.com/watch?v=9UeVeH5ZzP0&list=PLoN_ejT35AEg-xKnTgIjE5VU-3IHO2
 
 Recreate (at least 6 of) the animations here using CSS transitions. Use CSS custom properties in your solutions!
 
-- [CSS Animation Challenges](../Assignments/assignment-03-Animation.md)
+- [CSS Animation Challenges](https://tech-at-du.github.io/ACS-3320-Web-Design-and-Advanced-CSS/lessons/lesson-02-example.html)
 
 Add some animation to the project you are redesigning. 
 
