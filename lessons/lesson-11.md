@@ -622,7 +622,9 @@ This example reprises the previous example but uses CSS custom properties to def
 
 ## After Class 
 
+Continue working on your redesign project. 
 
+Submit your loading animation to gradescope. 
 
 ## Additional Resources
 
