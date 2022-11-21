@@ -51,11 +51,11 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 |  7 |  Wed, Nov  9 | [lesson-pseudo-elements] |  |
 |  8 |  Mon, Nov 14 | [Lesson 10 Animation] | Challenge Problems |
 |  9 |  Wed, Nov 16 | [Lesson 11 Animation] |  |
-| 10 |  Mon, Nov 21 | [Lesson 11 CSS Preprocessors] |  |
+| 10 |  Mon, Nov 21 | [3D CSS] |  |
 | 11 |  Wed, Nov 23 | **Thanks Giving Holiday** | - |
-| 12 |  Mon, Nov 28 | [Lesson 12 Web Components 1] | - |
-| 13 |  Wed, Nov 30 | [Lesson 13 Web Components 2] | - |
-| 14 |  Mon, Dec  5 | - | - |
+| 12 |  Mon, Nov 28 | [Lesson 11 CSS Preprocessors] | - |
+| 13 |  Wed, Nov 30 | [Lesson 12 Web Components 1] | - |
+| 14 |  Mon, Dec  5 | [Lesson 13 Web Components 2] | - |
 | 15 |  Mon, Dec  5 | Final Assessment | - |
 
 <!-- Lessons -->
@@ -70,6 +70,8 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 9 Form Controls]: lessons/lesson-09.md
 [Lesson 10 Animation]: lessons/lesson-10.md
 [Lesson 11 Animation]: lessons/lesson-11.md
+
+[[3D CSS]]: lessons/3d-css.md
 
 [Lesson 11 CSS Preprocessors]: lessons/lesson-12.md
 [Lesson 12 Web Components 1]: lessons/lesson-15.md

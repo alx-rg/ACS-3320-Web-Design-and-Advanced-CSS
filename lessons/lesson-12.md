@@ -23,7 +23,7 @@ Hints:
 
 ## What are preprocessors?
 
-A pre processor processes code *before* it is used. A CSS preprocessor processes your CSS before it's used by in the browser. 
+A preprocessor processes code *before* it is used. A CSS preprocessor processes your CSS before it's used by in the browser. 
 
 How does the preprocessor work? You write code in a language that is *similar to* standard CSS. The preprcoessor reads this this code and outputs standard CSS. 
 
@@ -129,18 +129,9 @@ SASS also supports flow control. These are features you find in other languages 
 
 Assignment 1: 
 
-Follow the videos here for lessons 11 and 12. Complete the example created there, it looks like an animated flower. Soleve the SASS problems. Feel free to apply your own ideas to this exercise, Submit it to GradeScope. 
+Follow the videos here for lessons 11 and 12. Complete the example created there, it looks like an animated flower. Solve the SASS problems. Feel free to apply your own ideas to this exercise, Submit it to GradeScope.  
 
-Assignment 2: 
-
-Find a past project and apply SASS to that project. Rewrite and compile the stylesheet with SASS. Use the following: 
-
-- SASS Variables
-- Use SASS operators and expressions
-- Use @for
-- Use the SASS nested selector syntax
-
-Use the SASS docs. Read up on the following. 
+## Additional Resources
 
 - https://sass-lang.com/guide
 - https://sass-lang.com/documentation
@@ -148,10 +139,6 @@ Use the SASS docs. Read up on the following.
 	- https://sass-lang.com/documentation/operators
 	- https://sass-lang.com/documentation/at-rules
 	- https://sass-lang.com/documentation/style-rules
-
-## Additional Resources
-
-- https://sass-lang.com
 
 
 <!-- ## Minute-by-Minute [OPTIONAL]
