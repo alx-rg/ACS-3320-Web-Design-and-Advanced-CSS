@@ -93,8 +93,11 @@ Why do this? If you want to create an animation that flips something over reveal
     height: 120px;
     background-color: tomato;
     position: relative;
+    /* This property determines whether children of the element
+    are flattened or transformed in 3d. See: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style */
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    /* Apply the animation below */
     animation-name: spin;
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
@@ -122,6 +125,7 @@ Why do this? If you want to create an animation that flips something over reveal
     transform: rotateY(180deg);
   }
 
+  /* Notice we're animating the rotateY property! */
   @keyframes spin {
     0% {
       transform: perspective(400px) rotateY(0);
@@ -174,13 +178,17 @@ The two divs inside of .box are positioned back to back and they are backface hi
     height: 120px;
     background-color: tomato;
     position: relative;
-    /* Required to preserve 3d transformations on children */
+    /* Required to preserve 3d transformations on children
+    This property determines whether children of the element
+    are flattened or transformed in 3d. See: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style */
     transform-style: preserve-3d;
+    /* For browser support and compatibility */
     -webkit-transform-style: preserve-3d;
     animation-name: spin;
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
     transform: perspective(400px) rotateY(0);
     transition: 1000ms;
   }
@@ -206,6 +214,7 @@ The two divs inside of .box are positioned back to back and they are backface hi
   }
 
   .box>div:last-child {
+    /* Flip the back side element */
     transform: translateZ(-1px) rotateY(180deg);
   }
 
