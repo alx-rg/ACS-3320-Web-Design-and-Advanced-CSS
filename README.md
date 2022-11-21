@@ -71,7 +71,7 @@ Beyond these you should be able to apply CSS like a boss and bring your ideas to
 [Lesson 10 Animation]: lessons/lesson-10.md
 [Lesson 11 Animation]: lessons/lesson-11.md
 
-[[3D CSS]]: lessons/3d-css.md
+[3D CSS]: lessons/3d-css.md
 
 [Lesson 11 CSS Preprocessors]: lessons/lesson-12.md
 [Lesson 12 Web Components 1]: lessons/lesson-15.md
