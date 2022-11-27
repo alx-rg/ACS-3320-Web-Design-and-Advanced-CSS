@@ -23,17 +23,20 @@ Hints:
 
 ## What are preprocessors?
 
-A preprocessor processes code *before* it is used. A CSS preprocessor processes your CSS before it's used by in the browser. 
+A preprocessor processes code *before* it is used. A CSS preprocessor processes your CSS before it's used by the browser. 
 
-How does the preprocessor work? You write code in a language that is *similar to* standard CSS. The preprcoessor reads this this code and outputs standard CSS. 
+How does the preprocessor work? You write code in a language that is *similar to* standard CSS. The preprocessor reads this code and outputs standard CSS. 
 
 The language we will use in these lessons is SASS. You'll also use sass in the terminal to process your SASS code into CSS. 
 
 Read more about SASS from the source: https://sass-lang.com
 
-There are several CSS preprocessors the two most popular are LESS and SASS. 
+There are several CSS preprocessors; the two most popular are LESS and SASS. 
 
-NOTE! SASS has two versions SASS and SCSS. These are similar and compiled the same. SASS uses a syntax closer to Python where the the indentation matters. While SCSS uses a syntax that is closer to regular CSS. We are going to use SCSS for these lessons. 
+NOTE! SASS has two versions SASS and SCSS. These are similar and compiled the same. 
+- SASS uses a syntax closer to Python where the indentation matters. 
+- SCSS uses a syntax that is closer to regular CSS. 
+We are going to use SCSS for these lessons. 
 
 Any CSS code you write is compatible with SCSS. Using SCSS you can write the regular CSS that you already know and use the extra features of SASS covered below. 
 
@@ -79,7 +82,7 @@ Create a new file: `styles.scss`
 
 The `.scss` file extension is used for SASS files! 
 
-**Note! You can not load `.scss` in to a browser! This file must need to be processed and output to a `.css` file first!**
+**Note! You can not load `.scss` into a browser! This file must be processed and output to a `.css` file first!**
 
 Add some code to `styles.css`:
 
@@ -92,7 +95,7 @@ body {
 }
 ```
 
-Run the SASS proocessor. In the terminal: 
+Run the SASS processor. In the terminal: 
 
 ```
 sass --watch styles.scss styles.css
@@ -106,11 +109,11 @@ Looking at `styles.css` you'll see it's almost identical to `styles.scss`. That'
 
 So what does SASS do for us? SASS adds features not available to standard CSS. 
 
-We will cover some of the features of SASS in this lesson you can look at the SASS documentation for a full list of everything in thelanguage: https://sass-lang.com/documentation
+We will cover some of the features of SASS in this lesson you can look at the SASS documentation for a full list of everything in the language: https://sass-lang.com/documentation
 
 ### Syntax
 
-SASS is a a language that compiles to vanilla CSS. It uses the same syntax as the CSS language. This means anything that works in normal CSS is okay in SASS. 
+SASS is a language that compiles to vanilla CSS. It uses the same syntax as the CSS language. This means anything that works in normal CSS is okay in SASS. 
 
 ### SASS Features
 
