@@ -49,7 +49,7 @@ You can follow this lesson in Video here:
 
 https://www.youtube.com/playlist?list=PLoN_ejT35AEhF_M9vBuZgW0E4PiDb19oX
 
-Follow: lesson 12 for the SASS discussion.
+Follow: lesson 12 for the SASS discussion. You can catch up with a review of animation by following lesson 11. 
 
 ## SASS Intro
 
