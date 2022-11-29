@@ -15,7 +15,7 @@ Web Components are probably the most important new and emerging web technology. 
 
 ## What are web components?
 
-Just like all a lot of household objects web pages are made up of component parts. For example a chair might be made up of some wheels, a frame, and a cushion. A web page might be made up of text blocks, navbars, buttons, and images. 
+Just like a lot of household objects, web pages are made up of component parts. For example a chair might be made up of some wheels, a frame, and a cushion. A web page might be made up of text blocks, navbars, buttons, and images. 
 
 We handle all of these things with HTML elements/tags. Some of these elements are very specialized and come with built in functionality.
 
@@ -28,7 +28,7 @@ For example, think about the `<input>` element. This can appear in many differen
 <input type="color" />
 ```
 
-Some functionality doesn't exist in an HTML document. We have to make it work by creating a hierarchy of elements, styling those elements, and applying JavaScript to thos elements. 
+Some functionality doesn't exist in an HTML document. We have to make it work by creating a hierarchy of elements, styling those elements, and applying JavaScript to those elements. 
 
 For an example think about the carousel in BootStrap. The markup looks like this: 
 
@@ -48,9 +48,9 @@ For an example think about the carousel in BootStrap. The markup looks like this
 </div>
 ```
 
-What does this have to do with web components? In a nutshell web components are new tags that you define and encapsulate with in built functionality. 
+What does this have to do with web components? In a nutshell web components are new tags that you define and encapsulate with built-in functionality. 
 
-Imagine creating carousel above with a custom carousel tag like this: 
+Imagine creating the carousel above with a custom carousel tag like this: 
 
 ```HTML
 <frmwrk-slides time="5000">
@@ -69,7 +69,7 @@ While the two examples are similar the second has less required markup and doesn
 
 ## Shadow DOM
 
-A core feature of web components is the Shadow DOM. The Shadow DOM is a another DOM that is hidden from rest of your HTML document. Often you will need to add extra markup to support complex elements and interactions. The shadow DOM allows you to create these elements and hide them from the rest of the HTML document. 
+A core feature of web components is the Shadow DOM. The Shadow DOM is another DOM that is hidden from rest of your HTML document. Often you will need to add extra markup to support complex elements and interactions. The shadow DOM allows you to create these elements and hide them from the rest of the HTML document. 
 
 The shadow DOM is in use by many existing HTML elements like the `<input>`. Inspect this for yourself. Create an HTML document with:
 
@@ -80,7 +80,7 @@ The shadow DOM is in use by many existing HTML elements like the `<input>`. Insp
 <input type="color" />
 ```
 
-Using the inspector find the `shadow content` or `Shadow-Root`. You will need to make the this visible by checking `Show user agent Shadow DOM` in Chrome under settinging in the inspector. 
+Using the inspector find the `shadow content` or `Shadow-Root`. You will first need to make this visible by checking `Show user agent Shadow DOM` in Chrome under Settings > Preference > Elements > `Show user agent Shadow DOM` . 
 
 ## Getting Started with Web Components
 
@@ -174,7 +174,7 @@ This attaches a shadow root and stores it in a property: `_shadowRoot`
 
 Use lifecycle methods to initialize and deinitialize your web component. 
 
-The **connectedCallback()** method is called when the component is added to the DOM. Use this to start timers set initial property values, measure the size the size of the component. 
+The **connectedCallback()** method is called when the component is added to the DOM. Use this to start timers, set initial property values or measure the size of the component. 
 
 The **disconnectedCallback()** method is called when the component is removed from the DOM. Use this to clean up. Do things like stop timers, and free resources that you may be using. 
 
@@ -199,7 +199,7 @@ customElements.define('blink-text', BlinkText);
 
 ## handling attributes 
 
-Attrbites appear in tags like this: 
+Attributes appear in tags like this: 
 
 ```html
 <my-element time="1000" min="0" max="5">
@@ -207,11 +207,11 @@ Attrbites appear in tags like this:
 </my-element>
 ```
 
-The attributes are: time, min, and mac above. 
+The attributes are: time, min, and max above. 
 
 Attributes allow us to pass data into our custom elements. 
 
-Internally the custom element needs to define when attributes it observes. Some attributes don't need to be observed for example: class, and id. 
+Internally the custom element needs to define what attributes it observes. Some attributes don't need to be observed for example: class, and id. 
 
 ```JS
 class BlinkText extends HTMLElement {
@@ -235,7 +235,7 @@ class BlinkText extends HTMLElement {
 customElements.define('blink-text', BlinkText);
 ```
 
-Handle changes to attributes by looking at the name to see which attribute has changed, then compare the old and new values to decide how to change the attribute. 
+Handle changes to attributes by looking at the name to see which attribute has changed, then compares the old and new values to decide how to change the attribute. 
 
 ```JS
 attributeChangedCallback(name, oldValue, newValue) {
